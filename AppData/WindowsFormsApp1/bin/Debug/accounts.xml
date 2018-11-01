@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AccountsBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Accounts>
+    <Account>
+      <login>houses_theory</login>
+      <password>jura2123</password>
+      <status>logging in</status>
+    </Account>
+    <Account>
+      <login>jura_fedorkevich</login>
+      <password>jura2123</password>
+      <status>logging in</status>
+    </Account>
+    <Account>
+      <login>im_raptured</login>
+      <password>jura2123</password>
+      <status>logging in</status>
+    </Account>
+  </Accounts>
+</AccountsBase>

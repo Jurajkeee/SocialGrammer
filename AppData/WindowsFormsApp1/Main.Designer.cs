@@ -1,0 +1,1513 @@
+﻿namespace WindowsFormsApp1
+{
+    partial class Main
+    {
+        /// <summary>
+        /// Обязательная переменная конструктора.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Освободить все используемые ресурсы.
+        /// </summary>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Код, автоматически созданный конструктором форм Windows
+
+        /// <summary>
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this.Button6 = new System.Windows.Forms.Button();
+            this.SettingsButton = new System.Windows.Forms.Button();
+            this.StatsButton = new System.Windows.Forms.Button();
+            this.TasksButton = new System.Windows.Forms.Button();
+            this.TopPanel = new System.Windows.Forms.Panel();
+            this.HideApp = new System.Windows.Forms.PictureBox();
+            this.CloseApp = new System.Windows.Forms.PictureBox();
+            this.AccountsButton = new System.Windows.Forms.Button();
+            this.LeftMenu = new System.Windows.Forms.Panel();
+            this.PictureBox10 = new System.Windows.Forms.PictureBox();
+            this.PictureBox9 = new System.Windows.Forms.PictureBox();
+            this.PictureBox8 = new System.Windows.Forms.PictureBox();
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.SoftMenuLogoPanel = new System.Windows.Forms.Panel();
+            this.PictureBox7 = new System.Windows.Forms.PictureBox();
+            this.SoftWindow = new System.Windows.Forms.Panel();
+            this.Tasks = new System.Windows.Forms.Panel();
+            this.LikingTasks = new System.Windows.Forms.Panel();
+            this.SubscriningTasks = new System.Windows.Forms.Panel();
+            this.subscribingTasksButton = new System.Windows.Forms.Button();
+            this.TechnicalTasksButton = new System.Windows.Forms.Button();
+            this.LikingTasksButton = new System.Windows.Forms.Button();
+            this.ConcurentsSubscribing = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.checkBox1ConcurentsSubscribing = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.Accounts = new System.Windows.Forms.Panel();
+            this.searchAccount = new System.Windows.Forms.Panel();
+            this.SearchButton = new System.Windows.Forms.Panel();
+            this.SearchLine = new System.Windows.Forms.Panel();
+            this.accountsList = new System.Windows.Forms.Panel();
+            this.AddAccountButton = new System.Windows.Forms.Button();
+            this.AccountRight = new System.Windows.Forms.Panel();
+            this.AccountLeft = new System.Windows.Forms.Panel();
+            this.accountInfo = new System.Windows.Forms.Panel();
+            this.youFollowedToday = new System.Windows.Forms.Label();
+            this.follow_you = new System.Windows.Forms.Label();
+            this.youFollowing = new System.Windows.Forms.Label();
+            this.followedToday = new System.Windows.Forms.Label();
+            this.account_name = new System.Windows.Forms.Label();
+            this.accountLoginPass = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.PassTextBox = new System.Windows.Forms.Label();
+            this.loginTextBox = new System.Windows.Forms.Label();
+            this.ConfirmAddingAccount = new System.Windows.Forms.Button();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.loginTextBox1 = new System.Windows.Forms.TextBox();
+            this.Header = new System.Windows.Forms.Panel();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.Settings = new System.Windows.Forms.Panel();
+            this.Stats = new System.Windows.Forms.Panel();
+            this.appConsole = new System.Windows.Forms.Label();
+            this.LoginWindow = new System.Windows.Forms.Panel();
+            this.PictureBox4 = new System.Windows.Forms.PictureBox();
+            this.PictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.LogoPart = new System.Windows.Forms.Panel();
+            this.Panel1 = new System.Windows.Forms.Panel();
+            this.OrangeLine = new System.Windows.Forms.Panel();
+            this.PictureBox6 = new System.Windows.Forms.PictureBox();
+            this.PictureBox5 = new System.Windows.Forms.PictureBox();
+            this.SocialGrammerText = new System.Windows.Forms.Label();
+            this.Logo = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LikingPanel = new System.Windows.Forms.Panel();
+            this.SubcribingPanel = new System.Windows.Forms.Panel();
+            this.ConcurentsSubscribingPreview = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HideApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).BeginInit();
+            this.LeftMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            this.SoftMenuLogoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
+            this.SoftWindow.SuspendLayout();
+            this.Tasks.SuspendLayout();
+            this.SubscriningTasks.SuspendLayout();
+            this.ConcurentsSubscribing.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.Accounts.SuspendLayout();
+            this.searchAccount.SuspendLayout();
+            this.accountsList.SuspendLayout();
+            this.accountInfo.SuspendLayout();
+            this.accountLoginPass.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.Header.SuspendLayout();
+            this.Stats.SuspendLayout();
+            this.LoginWindow.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
+            this.LogoPart.SuspendLayout();
+            this.OrangeLine.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.LikingPanel.SuspendLayout();
+            this.SubcribingPanel.SuspendLayout();
+            this.ConcurentsSubscribingPreview.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // Button6
+            // 
+            this.Button6.BackColor = System.Drawing.Color.Transparent;
+            this.Button6.FlatAppearance.BorderSize = 0;
+            this.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button6.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button6.Location = new System.Drawing.Point(0, 523);
+            this.Button6.Name = "Button6";
+            this.Button6.Size = new System.Drawing.Size(187, 61);
+            this.Button6.TabIndex = 8;
+            this.Button6.UseVisualStyleBackColor = false;
+            this.Button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.FlatAppearance.BorderSize = 0;
+            this.SettingsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingsButton.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.SettingsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.SettingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingsButton.Location = new System.Drawing.Point(0, 246);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.Size = new System.Drawing.Size(187, 61);
+            this.SettingsButton.TabIndex = 6;
+            this.SettingsButton.Text = "          settings";
+            this.SettingsButton.UseVisualStyleBackColor = false;
+            this.SettingsButton.Click += new System.EventHandler(this.Button5_Click);
+            this.SettingsButton.MouseLeave += new System.EventHandler(this.Button5_MouseLeave);
+            this.SettingsButton.MouseHover += new System.EventHandler(this.Button5_MouseHover);
+            // 
+            // StatsButton
+            // 
+            this.StatsButton.BackColor = System.Drawing.Color.Transparent;
+            this.StatsButton.FlatAppearance.BorderSize = 0;
+            this.StatsButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.StatsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.StatsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.StatsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StatsButton.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.StatsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.StatsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StatsButton.Location = new System.Drawing.Point(0, 179);
+            this.StatsButton.Name = "StatsButton";
+            this.StatsButton.Size = new System.Drawing.Size(187, 61);
+            this.StatsButton.TabIndex = 4;
+            this.StatsButton.Text = "   stats";
+            this.StatsButton.UseVisualStyleBackColor = false;
+            this.StatsButton.Click += new System.EventHandler(this.Button4_Click);
+            this.StatsButton.MouseLeave += new System.EventHandler(this.Button4_MouseLeave);
+            this.StatsButton.MouseHover += new System.EventHandler(this.Button4_MouseHover);
+            // 
+            // TasksButton
+            // 
+            this.TasksButton.BackColor = System.Drawing.Color.Transparent;
+            this.TasksButton.FlatAppearance.BorderSize = 0;
+            this.TasksButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.TasksButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.TasksButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.TasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TasksButton.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.TasksButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.TasksButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TasksButton.Location = new System.Drawing.Point(0, 112);
+            this.TasksButton.Name = "TasksButton";
+            this.TasksButton.Size = new System.Drawing.Size(187, 61);
+            this.TasksButton.TabIndex = 2;
+            this.TasksButton.Text = "    tasks";
+            this.TasksButton.UseVisualStyleBackColor = false;
+            this.TasksButton.Click += new System.EventHandler(this.Button3_Click);
+            this.TasksButton.MouseLeave += new System.EventHandler(this.Button3_MouseLeave);
+            this.TasksButton.MouseHover += new System.EventHandler(this.Button3_MouseHover);
+            // 
+            // TopPanel
+            // 
+            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
+            this.TopPanel.Controls.Add(this.HideApp);
+            this.TopPanel.Controls.Add(this.CloseApp);
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(0, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(1008, 29);
+            this.TopPanel.TabIndex = 8;
+            this.TopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseDown);
+            this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
+            this.TopPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseUp);
+            // 
+            // HideApp
+            // 
+            this.HideApp.BackColor = System.Drawing.Color.Transparent;
+            this.HideApp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Hide;
+            this.HideApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HideApp.Location = new System.Drawing.Point(962, 9);
+            this.HideApp.Name = "HideApp";
+            this.HideApp.Size = new System.Drawing.Size(15, 15);
+            this.HideApp.TabIndex = 3;
+            this.HideApp.TabStop = false;
+            this.HideApp.Click += new System.EventHandler(this.HideApp_Click);
+            // 
+            // CloseApp
+            // 
+            this.CloseApp.BackColor = System.Drawing.Color.Transparent;
+            this.CloseApp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Close;
+            this.CloseApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CloseApp.Location = new System.Drawing.Point(983, 9);
+            this.CloseApp.Name = "CloseApp";
+            this.CloseApp.Size = new System.Drawing.Size(15, 15);
+            this.CloseApp.TabIndex = 2;
+            this.CloseApp.TabStop = false;
+            this.CloseApp.Click += new System.EventHandler(this.CloseApp_Click);
+            // 
+            // AccountsButton
+            // 
+            this.AccountsButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccountsButton.FlatAppearance.BorderSize = 0;
+            this.AccountsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AccountsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.AccountsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AccountsButton.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.AccountsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.AccountsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AccountsButton.Location = new System.Drawing.Point(0, 45);
+            this.AccountsButton.Name = "AccountsButton";
+            this.AccountsButton.Size = new System.Drawing.Size(187, 61);
+            this.AccountsButton.TabIndex = 0;
+            this.AccountsButton.Text = "            accounts";
+            this.AccountsButton.UseVisualStyleBackColor = false;
+            this.AccountsButton.Click += new System.EventHandler(this.Button2_Click);
+            this.AccountsButton.MouseLeave += new System.EventHandler(this.Button2_MouseLeave);
+            this.AccountsButton.MouseHover += new System.EventHandler(this.Button2_MouseHover);
+            // 
+            // LeftMenu
+            // 
+            this.LeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.LeftMenu.Controls.Add(this.PictureBox10);
+            this.LeftMenu.Controls.Add(this.Button6);
+            this.LeftMenu.Controls.Add(this.PictureBox9);
+            this.LeftMenu.Controls.Add(this.SettingsButton);
+            this.LeftMenu.Controls.Add(this.PictureBox8);
+            this.LeftMenu.Controls.Add(this.StatsButton);
+            this.LeftMenu.Controls.Add(this.PictureBox2);
+            this.LeftMenu.Controls.Add(this.TasksButton);
+            this.LeftMenu.Controls.Add(this.PictureBox1);
+            this.LeftMenu.Controls.Add(this.AccountsButton);
+            this.LeftMenu.Location = new System.Drawing.Point(0, 105);
+            this.LeftMenu.Name = "LeftMenu";
+            this.LeftMenu.Size = new System.Drawing.Size(187, 584);
+            this.LeftMenu.TabIndex = 0;
+            // 
+            // PictureBox10
+            // 
+            this.PictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox10.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logout;
+            this.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox10.Location = new System.Drawing.Point(31, 544);
+            this.PictureBox10.Name = "PictureBox10";
+            this.PictureBox10.Size = new System.Drawing.Size(29, 21);
+            this.PictureBox10.TabIndex = 9;
+            this.PictureBox10.TabStop = false;
+            // 
+            // PictureBox9
+            // 
+            this.PictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings;
+            this.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox9.Location = new System.Drawing.Point(31, 260);
+            this.PictureBox9.Name = "PictureBox9";
+            this.PictureBox9.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox9.TabIndex = 7;
+            this.PictureBox9.TabStop = false;
+            // 
+            // PictureBox8
+            // 
+            this.PictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox8.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.monitor;
+            this.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox8.Location = new System.Drawing.Point(31, 193);
+            this.PictureBox8.Name = "PictureBox8";
+            this.PictureBox8.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox8.TabIndex = 5;
+            this.PictureBox8.TabStop = false;
+            // 
+            // PictureBox2
+            // 
+            this.PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings_1;
+            this.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox2.Location = new System.Drawing.Point(31, 126);
+            this.PictureBox2.Name = "PictureBox2";
+            this.PictureBox2.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox2.TabIndex = 3;
+            this.PictureBox2.TabStop = false;
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.avatar;
+            this.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox1.Location = new System.Drawing.Point(31, 59);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox1.TabIndex = 1;
+            this.PictureBox1.TabStop = false;
+            // 
+            // Label1
+            // 
+            this.Label1.AutoSize = true;
+            this.Label1.BackColor = System.Drawing.Color.Transparent;
+            this.Label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Label1.Location = new System.Drawing.Point(12, 86);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(158, 22);
+            this.Label1.TabIndex = 2;
+            this.Label1.Text = "SOCAILGRAMMER";
+            // 
+            // SoftMenuLogoPanel
+            // 
+            this.SoftMenuLogoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.SoftMenuLogoPanel.Controls.Add(this.Label1);
+            this.SoftMenuLogoPanel.Controls.Add(this.PictureBox7);
+            this.SoftMenuLogoPanel.Location = new System.Drawing.Point(0, 0);
+            this.SoftMenuLogoPanel.Name = "SoftMenuLogoPanel";
+            this.SoftMenuLogoPanel.Size = new System.Drawing.Size(187, 121);
+            this.SoftMenuLogoPanel.TabIndex = 0;
+            // 
+            // PictureBox7
+            // 
+            this.PictureBox7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logo;
+            this.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox7.Location = new System.Drawing.Point(44, 35);
+            this.PictureBox7.Name = "PictureBox7";
+            this.PictureBox7.Size = new System.Drawing.Size(85, 50);
+            this.PictureBox7.TabIndex = 0;
+            this.PictureBox7.TabStop = false;
+            // 
+            // SoftWindow
+            // 
+            this.SoftWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.SoftWindow.Controls.Add(this.Tasks);
+            this.SoftWindow.Controls.Add(this.Accounts);
+            this.SoftWindow.Controls.Add(this.SoftMenuLogoPanel);
+            this.SoftWindow.Controls.Add(this.LeftMenu);
+            this.SoftWindow.Controls.Add(this.Header);
+            this.SoftWindow.Controls.Add(this.Settings);
+            this.SoftWindow.Controls.Add(this.Stats);
+            this.SoftWindow.Location = new System.Drawing.Point(0, 0);
+            this.SoftWindow.Name = "SoftWindow";
+            this.SoftWindow.Size = new System.Drawing.Size(1009, 695);
+            this.SoftWindow.TabIndex = 7;
+            // 
+            // Tasks
+            // 
+            this.Tasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Tasks.Controls.Add(this.panel2);
+            this.Tasks.Controls.Add(this.subscribingTasksButton);
+            this.Tasks.Controls.Add(this.TechnicalTasksButton);
+            this.Tasks.Controls.Add(this.LikingTasksButton);
+            this.Tasks.Controls.Add(this.ConcurentsSubscribing);
+            this.Tasks.Location = new System.Drawing.Point(187, 121);
+            this.Tasks.Name = "Tasks";
+            this.Tasks.Size = new System.Drawing.Size(822, 568);
+            this.Tasks.TabIndex = 2;
+            this.Tasks.Visible = false;
+            // 
+            // LikingTasks
+            // 
+            this.LikingTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.LikingTasks.Location = new System.Drawing.Point(0, 0);
+            this.LikingTasks.Name = "LikingTasks";
+            this.LikingTasks.Size = new System.Drawing.Size(274, 494);
+            this.LikingTasks.TabIndex = 7;
+            // 
+            // SubscriningTasks
+            // 
+            this.SubscriningTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.SubscriningTasks.Controls.Add(this.button11);
+            this.SubscriningTasks.Controls.Add(this.button10);
+            this.SubscriningTasks.Controls.Add(this.button9);
+            this.SubscriningTasks.Controls.Add(this.button8);
+            this.SubscriningTasks.Controls.Add(this.button5);
+            this.SubscriningTasks.Controls.Add(this.button7);
+            this.SubscriningTasks.Location = new System.Drawing.Point(0, 0);
+            this.SubscriningTasks.Name = "SubscriningTasks";
+            this.SubscriningTasks.Size = new System.Drawing.Size(274, 494);
+            this.SubscriningTasks.TabIndex = 6;
+            // 
+            // subscribingTasksButton
+            // 
+            this.subscribingTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(139)))), ((int)(((byte)(91)))));
+            this.subscribingTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Subscribing;
+            this.subscribingTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.subscribingTasksButton.FlatAppearance.BorderSize = 0;
+            this.subscribingTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subscribingTasksButton.Location = new System.Drawing.Point(548, 0);
+            this.subscribingTasksButton.Name = "subscribingTasksButton";
+            this.subscribingTasksButton.Size = new System.Drawing.Size(274, 76);
+            this.subscribingTasksButton.TabIndex = 2;
+            this.subscribingTasksButton.UseVisualStyleBackColor = false;
+            this.subscribingTasksButton.Click += new System.EventHandler(this.subscribingTasksButton_Click);
+            // 
+            // TechnicalTasksButton
+            // 
+            this.TechnicalTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(84)))));
+            this.TechnicalTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Technical;
+            this.TechnicalTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.TechnicalTasksButton.FlatAppearance.BorderSize = 0;
+            this.TechnicalTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TechnicalTasksButton.Location = new System.Drawing.Point(274, 0);
+            this.TechnicalTasksButton.Name = "TechnicalTasksButton";
+            this.TechnicalTasksButton.Size = new System.Drawing.Size(274, 76);
+            this.TechnicalTasksButton.TabIndex = 1;
+            this.TechnicalTasksButton.UseVisualStyleBackColor = false;
+            this.TechnicalTasksButton.Click += new System.EventHandler(this.TechnicalTasksButton_Click);
+            // 
+            // LikingTasksButton
+            // 
+            this.LikingTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(91)))), ((int)(((byte)(59)))));
+            this.LikingTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Liking;
+            this.LikingTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LikingTasksButton.FlatAppearance.BorderSize = 0;
+            this.LikingTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LikingTasksButton.Location = new System.Drawing.Point(0, 0);
+            this.LikingTasksButton.Name = "LikingTasksButton";
+            this.LikingTasksButton.Size = new System.Drawing.Size(274, 76);
+            this.LikingTasksButton.TabIndex = 0;
+            this.LikingTasksButton.UseVisualStyleBackColor = false;
+            this.LikingTasksButton.Click += new System.EventHandler(this.LikingTasksButton_Click);
+            // 
+            // ConcurentsSubscribing
+            // 
+            this.ConcurentsSubscribing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
+            this.ConcurentsSubscribing.Controls.Add(this.button2);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox6);
+            this.ConcurentsSubscribing.Controls.Add(this.label14);
+            this.ConcurentsSubscribing.Controls.Add(this.radioButton4);
+            this.ConcurentsSubscribing.Controls.Add(this.radioButton3);
+            this.ConcurentsSubscribing.Controls.Add(this.label13);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox5);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox4);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox3);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox2);
+            this.ConcurentsSubscribing.Controls.Add(this.radioButton2);
+            this.ConcurentsSubscribing.Controls.Add(this.radioButton1);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox1ConcurentsSubscribing);
+            this.ConcurentsSubscribing.Controls.Add(this.checkBox1);
+            this.ConcurentsSubscribing.Controls.Add(this.label12);
+            this.ConcurentsSubscribing.Controls.Add(this.textBox1);
+            this.ConcurentsSubscribing.Controls.Add(this.label11);
+            this.ConcurentsSubscribing.Controls.Add(this.pictureBox13);
+            this.ConcurentsSubscribing.Location = new System.Drawing.Point(0, 0);
+            this.ConcurentsSubscribing.Name = "ConcurentsSubscribing";
+            this.ConcurentsSubscribing.Size = new System.Drawing.Size(823, 571);
+            this.ConcurentsSubscribing.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Montserrat ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button2.Location = new System.Drawing.Point(564, 485);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(226, 47);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Submit Task";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.checkBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox6.Location = new System.Drawing.Point(23, 507);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(124, 25);
+            this.checkBox6.TabIndex = 16;
+            this.checkBox6.Text = "Smart mode";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.label14.Location = new System.Drawing.Point(20, 470);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(347, 21);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Pause between actions from 1 to 15 minutes";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.radioButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.radioButton4.Location = new System.Drawing.Point(68, 433);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(122, 25);
+            this.radioButton4.TabIndex = 14;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "In 15% cases";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.radioButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.radioButton3.Location = new System.Drawing.Point(68, 409);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(106, 25);
+            this.radioButton3.TabIndex = 13;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Everytime";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.label13.Location = new System.Drawing.Point(20, 381);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(148, 21);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "How to subscribe:";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.checkBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox5.Location = new System.Drawing.Point(68, 350);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(252, 25);
+            this.checkBox5.TabIndex = 11;
+            this.checkBox5.Text = "Have followed from 10 to 100";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.checkBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox4.Location = new System.Drawing.Point(68, 325);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(256, 25);
+            this.checkBox4.TabIndex = 10;
+            this.checkBox4.Text = "Have followers from 10 to 100";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox3.Location = new System.Drawing.Point(68, 300);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(279, 25);
+            this.checkBox3.TabIndex = 9;
+            this.checkBox3.Text = "Have publications from 10 to 100";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox2.Location = new System.Drawing.Point(68, 275);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(143, 25);
+            this.checkBox2.TabIndex = 8;
+            this.checkBox2.Text = "Have an avatar";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.radioButton2.Location = new System.Drawing.Point(23, 240);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(380, 25);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Subscribe only on accounts that passed filters";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold);
+            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.radioButton1.Location = new System.Drawing.Point(23, 210);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(212, 25);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Subscribe on everybody";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1ConcurentsSubscribing
+            // 
+            this.checkBox1ConcurentsSubscribing.AutoSize = true;
+            this.checkBox1ConcurentsSubscribing.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox1ConcurentsSubscribing.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1ConcurentsSubscribing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox1ConcurentsSubscribing.Location = new System.Drawing.Point(23, 140);
+            this.checkBox1ConcurentsSubscribing.Name = "checkBox1ConcurentsSubscribing";
+            this.checkBox1ConcurentsSubscribing.Size = new System.Drawing.Size(304, 25);
+            this.checkBox1ConcurentsSubscribing.TabIndex = 4;
+            this.checkBox1ConcurentsSubscribing.Text = "Don\'t subscribe on private accounts";
+            this.checkBox1ConcurentsSubscribing.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.checkBox1.Location = new System.Drawing.Point(23, 169);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(339, 25);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Don\'t subscribe on accounts without bio";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Montserrat SemiBold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.label12.Location = new System.Drawing.Point(20, 80);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(118, 21);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Aim Accounts";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.textBox1.Location = new System.Drawing.Point(23, 106);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(767, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Montserrat SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.label11.Location = new System.Drawing.Point(76, 28);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(272, 29);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Concurents Subscribing";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.SubcribeIcon;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.Location = new System.Drawing.Point(23, 23);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(47, 36);
+            this.pictureBox13.TabIndex = 0;
+            this.pictureBox13.TabStop = false;
+            // 
+            // Accounts
+            // 
+            this.Accounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Accounts.Controls.Add(this.searchAccount);
+            this.Accounts.Controls.Add(this.accountsList);
+            this.Accounts.Controls.Add(this.accountInfo);
+            this.Accounts.Controls.Add(this.accountLoginPass);
+            this.Accounts.Location = new System.Drawing.Point(187, 121);
+            this.Accounts.Name = "Accounts";
+            this.Accounts.Size = new System.Drawing.Size(822, 568);
+            this.Accounts.TabIndex = 1;
+            // 
+            // searchAccount
+            // 
+            this.searchAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(82)))), ((int)(((byte)(95)))));
+            this.searchAccount.Controls.Add(this.SearchButton);
+            this.searchAccount.Controls.Add(this.SearchLine);
+            this.searchAccount.Location = new System.Drawing.Point(0, 230);
+            this.searchAccount.Name = "searchAccount";
+            this.searchAccount.Size = new System.Drawing.Size(828, 47);
+            this.searchAccount.TabIndex = 1;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.magnifying_glass;
+            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SearchButton.Location = new System.Drawing.Point(784, 11);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(27, 24);
+            this.SearchButton.TabIndex = 0;
+            // 
+            // SearchLine
+            // 
+            this.SearchLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.SearchLine.Location = new System.Drawing.Point(581, 34);
+            this.SearchLine.Name = "SearchLine";
+            this.SearchLine.Size = new System.Drawing.Size(188, 1);
+            this.SearchLine.TabIndex = 0;
+            // 
+            // accountsList
+            // 
+            this.accountsList.Controls.Add(this.AddAccountButton);
+            this.accountsList.Controls.Add(this.AccountRight);
+            this.accountsList.Controls.Add(this.AccountLeft);
+            this.accountsList.Location = new System.Drawing.Point(0, 271);
+            this.accountsList.Name = "accountsList";
+            this.accountsList.Size = new System.Drawing.Size(822, 297);
+            this.accountsList.TabIndex = 2;
+            // 
+            // AddAccountButton
+            // 
+            this.AddAccountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.AddAccountButton.FlatAppearance.BorderSize = 0;
+            this.AddAccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddAccountButton.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddAccountButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.AddAccountButton.Location = new System.Drawing.Point(271, 104);
+            this.AddAccountButton.Name = "AddAccountButton";
+            this.AddAccountButton.Size = new System.Drawing.Size(279, 77);
+            this.AddAccountButton.TabIndex = 9;
+            this.AddAccountButton.Text = "Add Account";
+            this.AddAccountButton.UseVisualStyleBackColor = false;
+            this.AddAccountButton.Click += new System.EventHandler(this.AddAccountButton_Click);
+            // 
+            // AccountRight
+            // 
+            this.AccountRight.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back1;
+            this.AccountRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AccountRight.Location = new System.Drawing.Point(756, 104);
+            this.AccountRight.Name = "AccountRight";
+            this.AccountRight.Size = new System.Drawing.Size(53, 77);
+            this.AccountRight.TabIndex = 1;
+            this.AccountRight.Click += new System.EventHandler(this.AccountRight_Click);
+            // 
+            // AccountLeft
+            // 
+            this.AccountLeft.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back;
+            this.AccountLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AccountLeft.Location = new System.Drawing.Point(17, 104);
+            this.AccountLeft.Name = "AccountLeft";
+            this.AccountLeft.Size = new System.Drawing.Size(53, 77);
+            this.AccountLeft.TabIndex = 0;
+            this.AccountLeft.Click += new System.EventHandler(this.AccountLeft_Click);
+            // 
+            // accountInfo
+            // 
+            this.accountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
+            this.accountInfo.Controls.Add(this.youFollowedToday);
+            this.accountInfo.Controls.Add(this.follow_you);
+            this.accountInfo.Controls.Add(this.youFollowing);
+            this.accountInfo.Controls.Add(this.followedToday);
+            this.accountInfo.Controls.Add(this.account_name);
+            this.accountInfo.Location = new System.Drawing.Point(0, 0);
+            this.accountInfo.Name = "accountInfo";
+            this.accountInfo.Size = new System.Drawing.Size(822, 235);
+            this.accountInfo.TabIndex = 0;
+            // 
+            // youFollowedToday
+            // 
+            this.youFollowedToday.AutoSize = true;
+            this.youFollowedToday.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.youFollowedToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.youFollowedToday.Location = new System.Drawing.Point(33, 172);
+            this.youFollowedToday.Name = "youFollowedToday";
+            this.youFollowedToday.Size = new System.Drawing.Size(302, 30);
+            this.youFollowedToday.TabIndex = 6;
+            this.youFollowedToday.Text = "0 you have followed today";
+            // 
+            // follow_you
+            // 
+            this.follow_you.AutoSize = true;
+            this.follow_you.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.follow_you.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.follow_you.Location = new System.Drawing.Point(33, 64);
+            this.follow_you.Name = "follow_you";
+            this.follow_you.Size = new System.Drawing.Size(157, 30);
+            this.follow_you.TabIndex = 3;
+            this.follow_you.Text = "0 follows you";
+            // 
+            // youFollowing
+            // 
+            this.youFollowing.AutoSize = true;
+            this.youFollowing.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.youFollowing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.youFollowing.Location = new System.Drawing.Point(33, 100);
+            this.youFollowing.Name = "youFollowing";
+            this.youFollowing.Size = new System.Drawing.Size(208, 30);
+            this.youFollowing.TabIndex = 4;
+            this.youFollowing.Text = "0 you\'re following";
+            // 
+            // followedToday
+            // 
+            this.followedToday.AutoSize = true;
+            this.followedToday.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.followedToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.followedToday.Location = new System.Drawing.Point(33, 136);
+            this.followedToday.Name = "followedToday";
+            this.followedToday.Size = new System.Drawing.Size(243, 30);
+            this.followedToday.TabIndex = 5;
+            this.followedToday.Text = "0 followed you today";
+            // 
+            // account_name
+            // 
+            this.account_name.AutoSize = true;
+            this.account_name.BackColor = System.Drawing.Color.Transparent;
+            this.account_name.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.account_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.account_name.Location = new System.Drawing.Point(29, 20);
+            this.account_name.Name = "account_name";
+            this.account_name.Size = new System.Drawing.Size(187, 37);
+            this.account_name.TabIndex = 2;
+            this.account_name.Text = "Emily_Gross";
+            // 
+            // accountLoginPass
+            // 
+            this.accountLoginPass.Controls.Add(this.panel9);
+            this.accountLoginPass.Location = new System.Drawing.Point(0, -1);
+            this.accountLoginPass.Name = "accountLoginPass";
+            this.accountLoginPass.Size = new System.Drawing.Size(823, 568);
+            this.accountLoginPass.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.panel9.Controls.Add(this.pictureBox11);
+            this.panel9.Controls.Add(this.pictureBox12);
+            this.panel9.Controls.Add(this.PassTextBox);
+            this.panel9.Controls.Add(this.loginTextBox);
+            this.panel9.Controls.Add(this.ConfirmAddingAccount);
+            this.panel9.Controls.Add(this.passwordTextBox);
+            this.panel9.Controls.Add(this.loginTextBox1);
+            this.panel9.Location = new System.Drawing.Point(135, 87);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(518, 415);
+            this.panel9.TabIndex = 5;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
+            this.pictureBox11.Location = new System.Drawing.Point(64, 100);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(366, 1);
+            this.pictureBox11.TabIndex = 5;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
+            this.pictureBox12.Location = new System.Drawing.Point(64, 207);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(366, 1);
+            this.pictureBox12.TabIndex = 6;
+            this.pictureBox12.TabStop = false;
+            // 
+            // PassTextBox
+            // 
+            this.PassTextBox.AutoSize = true;
+            this.PassTextBox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.PassTextBox.Location = new System.Drawing.Point(62, 211);
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.Size = new System.Drawing.Size(87, 22);
+            this.PassTextBox.TabIndex = 2;
+            this.PassTextBox.Text = "password";
+            // 
+            // loginTextBox
+            // 
+            this.loginTextBox.AutoSize = true;
+            this.loginTextBox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.loginTextBox.Location = new System.Drawing.Point(62, 103);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(50, 22);
+            this.loginTextBox.TabIndex = 3;
+            this.loginTextBox.Text = "login";
+            // 
+            // ConfirmAddingAccount
+            // 
+            this.ConfirmAddingAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.ConfirmAddingAccount.FlatAppearance.BorderSize = 0;
+            this.ConfirmAddingAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfirmAddingAccount.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ConfirmAddingAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.ConfirmAddingAccount.Location = new System.Drawing.Point(36, 298);
+            this.ConfirmAddingAccount.Name = "ConfirmAddingAccount";
+            this.ConfirmAddingAccount.Size = new System.Drawing.Size(436, 73);
+            this.ConfirmAddingAccount.TabIndex = 4;
+            this.ConfirmAddingAccount.Text = "    Submit Account";
+            this.ConfirmAddingAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConfirmAddingAccount.UseVisualStyleBackColor = false;
+            this.ConfirmAddingAccount.Click += new System.EventHandler(this.ConfirmAddingAccount_Click);
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextBox.Font = new System.Drawing.Font("Montserrat", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.passwordTextBox.Location = new System.Drawing.Point(66, 165);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(363, 22);
+            this.passwordTextBox.TabIndex = 1;
+            // 
+            // loginTextBox1
+            // 
+            this.loginTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.loginTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loginTextBox1.Font = new System.Drawing.Font("Montserrat", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.loginTextBox1.Location = new System.Drawing.Point(66, 63);
+            this.loginTextBox1.Name = "loginTextBox1";
+            this.loginTextBox1.Size = new System.Drawing.Size(363, 22);
+            this.loginTextBox1.TabIndex = 0;
+            // 
+            // Header
+            // 
+            this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.Header.Controls.Add(this.Label2);
+            this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(1009, 121);
+            this.Header.TabIndex = 0;
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.BackColor = System.Drawing.Color.Transparent;
+            this.Label2.Font = new System.Drawing.Font("Montserrat ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Label2.Location = new System.Drawing.Point(216, 58);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(153, 37);
+            this.Label2.TabIndex = 1;
+            this.Label2.Text = "Accounts";
+            // 
+            // Settings
+            // 
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Settings.Location = new System.Drawing.Point(187, 121);
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(822, 568);
+            this.Settings.TabIndex = 4;
+            // 
+            // Stats
+            // 
+            this.Stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Stats.Controls.Add(this.appConsole);
+            this.Stats.Location = new System.Drawing.Point(187, 121);
+            this.Stats.Name = "Stats";
+            this.Stats.Size = new System.Drawing.Size(822, 568);
+            this.Stats.TabIndex = 3;
+            // 
+            // appConsole
+            // 
+            this.appConsole.AutoSize = true;
+            this.appConsole.Font = new System.Drawing.Font("Montserrat SemiBold", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.appConsole.Location = new System.Drawing.Point(6, 5);
+            this.appConsole.Name = "appConsole";
+            this.appConsole.Size = new System.Drawing.Size(37, 15);
+            this.appConsole.TabIndex = 1;
+            this.appConsole.Text = "LOG: ";
+            // 
+            // LoginWindow
+            // 
+            this.LoginWindow.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Background;
+            this.LoginWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LoginWindow.Controls.Add(this.PictureBox4);
+            this.LoginWindow.Controls.Add(this.PictureBox3);
+            this.LoginWindow.Controls.Add(this.Button1);
+            this.LoginWindow.Controls.Add(this.LogoPart);
+            this.LoginWindow.Location = new System.Drawing.Point(0, 0);
+            this.LoginWindow.Name = "LoginWindow";
+            this.LoginWindow.Size = new System.Drawing.Size(1009, 695);
+            this.LoginWindow.TabIndex = 6;
+            // 
+            // PictureBox4
+            // 
+            this.PictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox4.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Login;
+            this.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox4.Location = new System.Drawing.Point(193, 418);
+            this.PictureBox4.Name = "PictureBox4";
+            this.PictureBox4.Size = new System.Drawing.Size(182, 33);
+            this.PictureBox4.TabIndex = 3;
+            this.PictureBox4.TabStop = false;
+            // 
+            // PictureBox3
+            // 
+            this.PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Password;
+            this.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox3.Location = new System.Drawing.Point(193, 502);
+            this.PictureBox3.Name = "PictureBox3";
+            this.PictureBox3.Size = new System.Drawing.Size(182, 33);
+            this.PictureBox3.TabIndex = 2;
+            this.PictureBox3.TabStop = false;
+            // 
+            // Button1
+            // 
+            this.Button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button1.BackgroundImage")));
+            this.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Button1.FlatAppearance.BorderSize = 0;
+            this.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button1.Location = new System.Drawing.Point(193, 585);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(285, 37);
+            this.Button1.TabIndex = 1;
+            this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // LogoPart
+            // 
+            this.LogoPart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.LogoPart.Controls.Add(this.Panel1);
+            this.LogoPart.Controls.Add(this.OrangeLine);
+            this.LogoPart.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoPart.Location = new System.Drawing.Point(0, 0);
+            this.LogoPart.Name = "LogoPart";
+            this.LogoPart.Size = new System.Drawing.Size(1009, 359);
+            this.LogoPart.TabIndex = 0;
+            // 
+            // Panel1
+            // 
+            this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(31)))), ((int)(((byte)(45)))));
+            this.Panel1.Location = new System.Drawing.Point(0, 0);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Size = new System.Drawing.Size(1008, 29);
+            this.Panel1.TabIndex = 4;
+            // 
+            // OrangeLine
+            // 
+            this.OrangeLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.OrangeLine.Controls.Add(this.PictureBox6);
+            this.OrangeLine.Controls.Add(this.PictureBox5);
+            this.OrangeLine.Controls.Add(this.SocialGrammerText);
+            this.OrangeLine.Controls.Add(this.Logo);
+            this.OrangeLine.Location = new System.Drawing.Point(0, 112);
+            this.OrangeLine.Name = "OrangeLine";
+            this.OrangeLine.Size = new System.Drawing.Size(1008, 160);
+            this.OrangeLine.TabIndex = 0;
+            // 
+            // PictureBox6
+            // 
+            this.PictureBox6.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
+            this.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox6.Location = new System.Drawing.Point(0, 152);
+            this.PictureBox6.Name = "PictureBox6";
+            this.PictureBox6.Size = new System.Drawing.Size(1008, 10);
+            this.PictureBox6.TabIndex = 5;
+            this.PictureBox6.TabStop = false;
+            // 
+            // PictureBox5
+            // 
+            this.PictureBox5.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
+            this.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox5.Location = new System.Drawing.Point(-1, -1);
+            this.PictureBox5.Name = "PictureBox5";
+            this.PictureBox5.Size = new System.Drawing.Size(1009, 10);
+            this.PictureBox5.TabIndex = 6;
+            this.PictureBox5.TabStop = false;
+            // 
+            // SocialGrammerText
+            // 
+            this.SocialGrammerText.AutoSize = true;
+            this.SocialGrammerText.BackColor = System.Drawing.Color.Transparent;
+            this.SocialGrammerText.Font = new System.Drawing.Font("Montserrat ExtraLight", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SocialGrammerText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(242)))));
+            this.SocialGrammerText.Location = new System.Drawing.Point(177, 29);
+            this.SocialGrammerText.Name = "SocialGrammerText";
+            this.SocialGrammerText.Size = new System.Drawing.Size(560, 92);
+            this.SocialGrammerText.TabIndex = 1;
+            this.SocialGrammerText.Text = "SocialGrammer";
+            // 
+            // Logo
+            // 
+            this.Logo.BackColor = System.Drawing.Color.Transparent;
+            this.Logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logo.BackgroundImage")));
+            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Logo.Location = new System.Drawing.Point(751, 24);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(121, 114);
+            this.Logo.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.SubcribingPanel);
+            this.panel2.Controls.Add(this.LikingPanel);
+            this.panel2.Location = new System.Drawing.Point(0, 74);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(822, 494);
+            this.panel2.TabIndex = 9;
+            // 
+            // LikingPanel
+            // 
+            this.LikingPanel.Controls.Add(this.panel4);
+            this.LikingPanel.Controls.Add(this.LikingTasks);
+            this.LikingPanel.Location = new System.Drawing.Point(0, 0);
+            this.LikingPanel.Name = "LikingPanel";
+            this.LikingPanel.Size = new System.Drawing.Size(822, 497);
+            this.LikingPanel.TabIndex = 8;
+            // 
+            // SubcribingPanel
+            // 
+            this.SubcribingPanel.Controls.Add(this.ConcurentsSubscribingPreview);
+            this.SubcribingPanel.Controls.Add(this.SubscriningTasks);
+            this.SubcribingPanel.Location = new System.Drawing.Point(0, 0);
+            this.SubcribingPanel.Name = "SubcribingPanel";
+            this.SubcribingPanel.Size = new System.Drawing.Size(821, 497);
+            this.SubcribingPanel.TabIndex = 0;
+            // 
+            // ConcurentsSubscribingPreview
+            // 
+            this.ConcurentsSubscribingPreview.Controls.Add(this.button3);
+            this.ConcurentsSubscribingPreview.Controls.Add(this.panel3);
+            this.ConcurentsSubscribingPreview.Location = new System.Drawing.Point(274, 0);
+            this.ConcurentsSubscribingPreview.Name = "ConcurentsSubscribingPreview";
+            this.ConcurentsSubscribingPreview.Size = new System.Drawing.Size(547, 497);
+            this.ConcurentsSubscribingPreview.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(549, 120);
+            this.panel3.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(0, 420);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(548, 74);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "   Create Task";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Location = new System.Drawing.Point(274, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(548, 494);
+            this.panel4.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(0, 420);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(548, 74);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "   Create Task";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(549, 120);
+            this.panel5.TabIndex = 0;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button5.Location = new System.Drawing.Point(0, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(274, 69);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "button5";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button7.Location = new System.Drawing.Point(0, 69);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(274, 69);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "button7";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button8.Location = new System.Drawing.Point(0, 138);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(274, 69);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "button8";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button9.Location = new System.Drawing.Point(0, 207);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(274, 69);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "button9";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button10.Location = new System.Drawing.Point(0, 276);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(274, 69);
+            this.button10.TabIndex = 4;
+            this.button10.Text = "button10";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button11.Location = new System.Drawing.Point(0, 345);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(274, 69);
+            this.button11.TabIndex = 5;
+            this.button11.Text = "button11";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // Main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.ClientSize = new System.Drawing.Size(1008, 689);
+            this.Controls.Add(this.TopPanel);
+            this.Controls.Add(this.SoftWindow);
+            this.Controls.Add(this.LoginWindow);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1008, 689);
+            this.MinimumSize = new System.Drawing.Size(1008, 689);
+            this.Name = "Main";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
+            this.TopPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HideApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).EndInit();
+            this.LeftMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            this.SoftMenuLogoPanel.ResumeLayout(false);
+            this.SoftMenuLogoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
+            this.SoftWindow.ResumeLayout(false);
+            this.Tasks.ResumeLayout(false);
+            this.SubscriningTasks.ResumeLayout(false);
+            this.ConcurentsSubscribing.ResumeLayout(false);
+            this.ConcurentsSubscribing.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.Accounts.ResumeLayout(false);
+            this.searchAccount.ResumeLayout(false);
+            this.accountsList.ResumeLayout(false);
+            this.accountInfo.ResumeLayout(false);
+            this.accountInfo.PerformLayout();
+            this.accountLoginPass.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.Header.ResumeLayout(false);
+            this.Header.PerformLayout();
+            this.Stats.ResumeLayout(false);
+            this.Stats.PerformLayout();
+            this.LoginWindow.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
+            this.LogoPart.ResumeLayout(false);
+            this.OrangeLine.ResumeLayout(false);
+            this.OrangeLine.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.LikingPanel.ResumeLayout(false);
+            this.SubcribingPanel.ResumeLayout(false);
+            this.ConcurentsSubscribingPreview.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        internal System.Windows.Forms.PictureBox CloseApp;
+        internal System.Windows.Forms.PictureBox PictureBox4;
+        internal System.Windows.Forms.PictureBox PictureBox3;
+        internal System.Windows.Forms.Panel LoginWindow;
+        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Panel LogoPart;
+        internal System.Windows.Forms.Panel Panel1;
+        internal System.Windows.Forms.Panel OrangeLine;
+        internal System.Windows.Forms.PictureBox PictureBox6;
+        internal System.Windows.Forms.PictureBox PictureBox5;
+        internal System.Windows.Forms.Label SocialGrammerText;
+        internal System.Windows.Forms.Panel Logo;
+        internal System.Windows.Forms.PictureBox PictureBox10;
+        internal System.Windows.Forms.Button Button6;
+        internal System.Windows.Forms.PictureBox PictureBox9;
+        internal System.Windows.Forms.Button SettingsButton;
+        internal System.Windows.Forms.PictureBox PictureBox8;
+        internal System.Windows.Forms.Button StatsButton;
+        internal System.Windows.Forms.PictureBox PictureBox2;
+        internal System.Windows.Forms.Button TasksButton;
+        internal System.Windows.Forms.PictureBox PictureBox1;
+        internal System.Windows.Forms.Panel TopPanel;
+        internal System.Windows.Forms.PictureBox HideApp;
+        internal System.Windows.Forms.Button AccountsButton;
+        internal System.Windows.Forms.Panel LeftMenu;
+        internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.PictureBox PictureBox7;
+        internal System.Windows.Forms.Panel SoftMenuLogoPanel;
+        internal System.Windows.Forms.Panel SoftWindow;
+        internal System.Windows.Forms.Panel Header;
+        internal System.Windows.Forms.Label Label2;
+        private System.Windows.Forms.Panel Settings;
+        private System.Windows.Forms.Panel Stats;
+        private System.Windows.Forms.Panel Tasks;
+        private System.Windows.Forms.Panel Accounts;
+        private System.Windows.Forms.Panel searchAccount;
+        private System.Windows.Forms.Panel accountInfo;
+        private System.Windows.Forms.Label youFollowedToday;
+        private System.Windows.Forms.Label follow_you;
+        private System.Windows.Forms.Label youFollowing;
+        private System.Windows.Forms.Label followedToday;
+        private System.Windows.Forms.Label account_name;
+        private System.Windows.Forms.Panel SearchLine;
+        private System.Windows.Forms.Panel SearchButton;
+        private System.Windows.Forms.Panel accountsList;
+        private System.Windows.Forms.Panel AccountRight;
+        private System.Windows.Forms.Panel AccountLeft;
+        private System.Windows.Forms.Button AddAccountButton;
+        private System.Windows.Forms.Panel accountLoginPass;
+        private System.Windows.Forms.Button ConfirmAddingAccount;
+        private System.Windows.Forms.Label loginTextBox;
+        private System.Windows.Forms.Label PassTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox loginTextBox1;
+        private System.Windows.Forms.Label appConsole;
+        private System.Windows.Forms.Button subscribingTasksButton;
+        private System.Windows.Forms.Button TechnicalTasksButton;
+        private System.Windows.Forms.Button LikingTasksButton;
+        private System.Windows.Forms.Panel LikingTasks;
+        private System.Windows.Forms.Panel SubscriningTasks;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Panel ConcurentsSubscribing;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.CheckBox checkBox1ConcurentsSubscribing;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel SubcribingPanel;
+        private System.Windows.Forms.Panel ConcurentsSubscribingPreview;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel LikingPanel;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button7;
+    }
+}
+
