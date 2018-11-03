@@ -2,19 +2,16 @@
 <AccountsBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Accounts>
     <Account>
-      <login>houses_theory</login>
-      <password>jura2123</password>
+      <login>gfdsgdfs</login>
+      <password>sfgfdgsfd</password>
       <status>logging in</status>
+      <Tasks />
     </Account>
     <Account>
-      <login>jura_fedorkevich</login>
+      <login>Yurii_Fedorkevich</login>
       <password>jura2123</password>
       <status>logging in</status>
-    </Account>
-    <Account>
-      <login>im_raptured</login>
-      <password>jura2123</password>
-      <status>logging in</status>
+      <Tasks />
     </Account>
   </Accounts>
 </AccountsBase>

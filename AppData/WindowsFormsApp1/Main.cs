@@ -65,9 +65,15 @@ namespace WindowsFormsApp1
         }
         public void UpdateAccountInfo(int id)
         {
-            
+            try
+            {
                 account_name.Text = info.accounts_data.accounts[id].login;
-                 Logger.LogMessage(account_id.ToString());
+                Logger.LogMessage(account_id.ToString());
+            }
+            catch (Exception)
+            {
+                Logger.LogError("Accounts not found");
+            }
         }
         private void CloseApp_Click(object sender, EventArgs e)
         {
@@ -81,6 +87,7 @@ namespace WindowsFormsApp1
         private void Button1_Click(object sender, EventArgs e)
         {
             LoginWindow.Visible = false;
+            SoftWindow.Visible = true;
         }
 
         private void TopPanel_MouseMove(object sender, MouseEventArgs e)
@@ -156,7 +163,8 @@ namespace WindowsFormsApp1
         private void Button6_Click(object sender, EventArgs e)
         {
             LoginWindow.Visible = true;
-            ConcurentsSubscribing.Visible = false;
+
+            SoftWindow.Visible = false;
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -169,7 +177,7 @@ namespace WindowsFormsApp1
             Settings.Visible = false;
 
             accountLoginPass.Visible = false;
-            ConcurentsSubscribing.Visible = false;
+            CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
 
         }
@@ -182,7 +190,7 @@ namespace WindowsFormsApp1
             Tasks.Visible = true;
             Stats.Visible = false;
             Settings.Visible = false;
-            ConcurentsSubscribing.Visible = false;
+            CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
         }
 
@@ -194,7 +202,7 @@ namespace WindowsFormsApp1
             Tasks.Visible = false;
             Stats.Visible = true;
             Settings.Visible = false;
-            ConcurentsSubscribing.Visible = false;
+            CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
         }
 
@@ -206,7 +214,7 @@ namespace WindowsFormsApp1
             Tasks.Visible = false;
             Stats.Visible = false;
             Settings.Visible = true;
-            ConcurentsSubscribing.Visible = false;
+            CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
         }
 
@@ -254,56 +262,150 @@ namespace WindowsFormsApp1
         private void subscribingTasksButton_Click(object sender, EventArgs e)
         {
             UpdateTasksButtons(subscribingTasksButton);
-            SubcribingPanel.Visible = true;
-            LikingPanel.Visible = false;
+            SubscribingTasks.Visible = true;
+            LikingTasks.Visible = false;
+            TechnicalTasks.Visible = false;
         }
 
         private void TechnicalTasksButton_Click(object sender, EventArgs e)
         {
             UpdateTasksButtons(TechnicalTasksButton);
-            SubcribingPanel.Visible = false;
-            LikingPanel.Visible = false;
+            SubscribingTasks.Visible = false;
+            LikingTasks.Visible = false;
+            TechnicalTasks.Visible = true;
         }
 
         private void LikingTasksButton_Click(object sender, EventArgs e)
         {
             UpdateTasksButtons(LikingTasksButton);
-            SubcribingPanel.Visible = false;
-            LikingPanel.Visible = true;
+            SubscribingTasks.Visible = false;
+            LikingTasks.Visible = true;
+            TechnicalTasks.Visible = false;
         }
 
-        private void Likecomentstask_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hashtagssubsliking_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void likefollowers_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void concurentsliking_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
 
        
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             //CreateTask
-            ConcurentsSubscribing.Visible = false;
-
+            CompetitorsSubscribing.Visible = false;
+            
         }
 
-        private void createConcurentsSubscribing_Click(object sender, EventArgs e)
+       
+
+        
+
+        private void CompetitiorsSubscribingListButton_Click(object sender, EventArgs e)
         {
-            ConcurentsSubscribing.Visible = true;
+            choosedTaskForCreation = "userfollowersSubscribing";
+            TaskNameInDescriptionPanel.Text = "User Followers Subscribing";
+            TaskDescription.Text = "Task subscribing on followers "+ Environment.NewLine + "that follows specified accounts";
+        }
+        
+     
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            OpenTaskCreationSettings(choosedTaskForCreation);
+        }
+        public string choosedTaskForCreation;
+         public void OpenTaskCreationSettings(string task)
+        {
+            switch (task)
+            {
+                case "userfollowersSubscribing":
+                    CompetitorsSubscribing.BringToFront();
+                    CompetitorsSubscribing.Visible = true;
+                    Logger.LogMessage("Competitors Subscribing Task");
+                    break;
+                case "geolocationSubscribing":
+                    Logger.LogError("Not Implemented");
+                    break;
+                case "hashtagSubscribing":
+                    Logger.LogError("Not Implemented");
+                    break;
+                case "listSubscribing":
+                    Logger.LogError("Not Implemented");
+                    break;
+            }
+            
+        }
+        private void GeoSubscribingButton_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "geolocationSubscribing";
+            TaskNameInDescriptionPanel.Text = "GeoLoaction Subscribing";
+            TaskDescription.Text = "Task subscribing on users " + Environment.NewLine + "that were found in specified geolocation";
+        }
+        private void HashtagSubscribingButton_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "Hashtag Followers";
+            TaskDescription.Text = "Task subscribing on users" + Environment.NewLine + "that follows specified hashtags";
+        }
+        private void ListSubscribingButton_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "geolocationSubscribing";
+            TaskNameInDescriptionPanel.Text = "List Subscribing";
+            TaskDescription.Text = "Task subscribing on users " + Environment.NewLine + "in list";
+        }
+        //Liking Tasks
+        private void GeoLocationLiking_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "GeoLoaction Liking";
+            TaskDescription.Text = "Task liking users " + Environment.NewLine + "that were found in specified geolocation";
+        }
+
+        private void UserSubscribersLiking_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "User Subscribers Liking";
+            TaskDescription.Text = "Task liking users " + Environment.NewLine + "that follows specified accounts";
+        }
+
+        private void HashtagLiking_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "Hashtag Followers Liking";
+            TaskDescription.Text = "Task liking users " + Environment.NewLine + "that follows specified hashtags";
+        }
+
+        private void ListLiking_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "List Liking";
+            TaskDescription.Text = "Task liking users " + Environment.NewLine + "in specified list";
+        }
+
+        private void FollowersLiking_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "Followers Liking";
+            TaskDescription.Text = "Task liking " + Environment.NewLine + "your followers";
+        }
+
+        private void CommentsLiking_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "Comments Liking";
+            TaskDescription.Text = "Task liking users " + Environment.NewLine + "comments in specified accounts";
+        }
+        //Technical
+        private void NonFollowersUnsubscribingButton_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "Non Followers";
+            TaskDescription.Text = "Task unsubscribes from users " + Environment.NewLine + "that haven't followed you back";
+        }
+
+        private void UnfollowFollowingButton_Click(object sender, EventArgs e)
+        {
+            choosedTaskForCreation = "";
+            TaskNameInDescriptionPanel.Text = "Following Unsubsribing";
+            TaskDescription.Text = "Task unsubscribes from all users " + Environment.NewLine + "that you're following";
         }
 
         private void AccountLeft_Click(object sender, EventArgs e)
@@ -332,18 +434,13 @@ namespace WindowsFormsApp1
         
 
         private void AccountRight_Click(object sender, EventArgs e)
-        {
-            
+        {          
             try
             {
                 if (account_id < info.accounts_data.accounts.Length)
                 {
                     UpdateAccountInfo(++account_id);                   
                 }
-                //else {
-                //    account_id = 0;
-                //    UpdateAccountInfo(0);
-                //}
             }
             catch (Exception)
             {

@@ -48,12 +48,23 @@
             this.PictureBox7 = new System.Windows.Forms.PictureBox();
             this.SoftWindow = new System.Windows.Forms.Panel();
             this.Tasks = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.SubscribingTasks = new System.Windows.Forms.Panel();
+            this.ListSubscribingButton = new System.Windows.Forms.Button();
+            this.HashtagSubscribingButton = new System.Windows.Forms.Button();
+            this.CompetitorsSubscribingListButton = new System.Windows.Forms.Button();
+            this.GeoSubscribingButton = new System.Windows.Forms.Button();
             this.LikingTasks = new System.Windows.Forms.Panel();
-            this.SubscriningTasks = new System.Windows.Forms.Panel();
+            this.TaskPreview = new System.Windows.Forms.Panel();
+            this.TaskDescription = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.TaskNameInDescriptionPanel = new System.Windows.Forms.Label();
             this.subscribingTasksButton = new System.Windows.Forms.Button();
             this.TechnicalTasksButton = new System.Windows.Forms.Button();
             this.LikingTasksButton = new System.Windows.Forms.Button();
-            this.ConcurentsSubscribing = new System.Windows.Forms.Panel();
+            this.CompetitorsSubscribing = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -111,21 +122,15 @@
             this.PictureBox5 = new System.Windows.Forms.PictureBox();
             this.SocialGrammerText = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.LikingPanel = new System.Windows.Forms.Panel();
-            this.SubcribingPanel = new System.Windows.Forms.Panel();
-            this.ConcurentsSubscribingPreview = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.ListLiking = new System.Windows.Forms.Button();
+            this.HashtagLiking = new System.Windows.Forms.Button();
+            this.UserSubscribersLiking = new System.Windows.Forms.Button();
+            this.GeoLocationLiking = new System.Windows.Forms.Button();
+            this.FollowersLiking = new System.Windows.Forms.Button();
+            this.CommentsLiking = new System.Windows.Forms.Button();
+            this.TechnicalTasks = new System.Windows.Forms.Panel();
+            this.NonFollowersUnsubscribingButton = new System.Windows.Forms.Button();
+            this.UnfollowFollowingButton = new System.Windows.Forms.Button();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HideApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).BeginInit();
@@ -139,8 +144,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
             this.SoftWindow.SuspendLayout();
             this.Tasks.SuspendLayout();
-            this.SubscriningTasks.SuspendLayout();
-            this.ConcurentsSubscribing.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SubscribingTasks.SuspendLayout();
+            this.LikingTasks.SuspendLayout();
+            this.TaskPreview.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.CompetitorsSubscribing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.Accounts.SuspendLayout();
             this.searchAccount.SuspendLayout();
@@ -159,11 +168,7 @@
             this.OrangeLine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.LikingPanel.SuspendLayout();
-            this.SubcribingPanel.SuspendLayout();
-            this.ConcurentsSubscribingPreview.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.TechnicalTasks.SuspendLayout();
             this.SuspendLayout();
             // 
             // Button6
@@ -431,34 +436,167 @@
             this.Tasks.Controls.Add(this.subscribingTasksButton);
             this.Tasks.Controls.Add(this.TechnicalTasksButton);
             this.Tasks.Controls.Add(this.LikingTasksButton);
-            this.Tasks.Controls.Add(this.ConcurentsSubscribing);
+            this.Tasks.Controls.Add(this.CompetitorsSubscribing);
             this.Tasks.Location = new System.Drawing.Point(187, 121);
             this.Tasks.Name = "Tasks";
             this.Tasks.Size = new System.Drawing.Size(822, 568);
             this.Tasks.TabIndex = 2;
             this.Tasks.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.TechnicalTasks);
+            this.panel2.Controls.Add(this.SubscribingTasks);
+            this.panel2.Controls.Add(this.LikingTasks);
+            this.panel2.Controls.Add(this.TaskPreview);
+            this.panel2.Location = new System.Drawing.Point(0, 74);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(822, 494);
+            this.panel2.TabIndex = 9;
+            // 
+            // SubscribingTasks
+            // 
+            this.SubscribingTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.SubscribingTasks.Controls.Add(this.ListSubscribingButton);
+            this.SubscribingTasks.Controls.Add(this.HashtagSubscribingButton);
+            this.SubscribingTasks.Controls.Add(this.CompetitorsSubscribingListButton);
+            this.SubscribingTasks.Controls.Add(this.GeoSubscribingButton);
+            this.SubscribingTasks.Location = new System.Drawing.Point(0, 0);
+            this.SubscribingTasks.Name = "SubscribingTasks";
+            this.SubscribingTasks.Size = new System.Drawing.Size(274, 494);
+            this.SubscribingTasks.TabIndex = 6;
+            // 
+            // ListSubscribingButton
+            // 
+            this.ListSubscribingButton.FlatAppearance.BorderSize = 0;
+            this.ListSubscribingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ListSubscribingButton.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListSubscribingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.ListSubscribingButton.Location = new System.Drawing.Point(0, 207);
+            this.ListSubscribingButton.Name = "ListSubscribingButton";
+            this.ListSubscribingButton.Size = new System.Drawing.Size(274, 69);
+            this.ListSubscribingButton.TabIndex = 3;
+            this.ListSubscribingButton.Text = " List";
+            this.ListSubscribingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ListSubscribingButton.UseVisualStyleBackColor = true;
+            this.ListSubscribingButton.Click += new System.EventHandler(this.ListSubscribingButton_Click);
+            // 
+            // HashtagSubscribingButton
+            // 
+            this.HashtagSubscribingButton.FlatAppearance.BorderSize = 0;
+            this.HashtagSubscribingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HashtagSubscribingButton.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HashtagSubscribingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.HashtagSubscribingButton.Location = new System.Drawing.Point(0, 138);
+            this.HashtagSubscribingButton.Name = "HashtagSubscribingButton";
+            this.HashtagSubscribingButton.Size = new System.Drawing.Size(274, 69);
+            this.HashtagSubscribingButton.TabIndex = 2;
+            this.HashtagSubscribingButton.Text = " Hashtag";
+            this.HashtagSubscribingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HashtagSubscribingButton.UseVisualStyleBackColor = true;
+            this.HashtagSubscribingButton.Click += new System.EventHandler(this.HashtagSubscribingButton_Click);
+            // 
+            // CompetitorsSubscribingListButton
+            // 
+            this.CompetitorsSubscribingListButton.FlatAppearance.BorderSize = 0;
+            this.CompetitorsSubscribingListButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CompetitorsSubscribingListButton.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CompetitorsSubscribingListButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.CompetitorsSubscribingListButton.Location = new System.Drawing.Point(0, 0);
+            this.CompetitorsSubscribingListButton.Name = "CompetitorsSubscribingListButton";
+            this.CompetitorsSubscribingListButton.Size = new System.Drawing.Size(274, 69);
+            this.CompetitorsSubscribingListButton.TabIndex = 0;
+            this.CompetitorsSubscribingListButton.Text = " User Subscribers";
+            this.CompetitorsSubscribingListButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CompetitorsSubscribingListButton.UseVisualStyleBackColor = true;
+            this.CompetitorsSubscribingListButton.Click += new System.EventHandler(this.CompetitiorsSubscribingListButton_Click);
+            // 
+            // GeoSubscribingButton
+            // 
+            this.GeoSubscribingButton.FlatAppearance.BorderSize = 0;
+            this.GeoSubscribingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GeoSubscribingButton.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GeoSubscribingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.GeoSubscribingButton.Location = new System.Drawing.Point(0, 69);
+            this.GeoSubscribingButton.Name = "GeoSubscribingButton";
+            this.GeoSubscribingButton.Size = new System.Drawing.Size(274, 69);
+            this.GeoSubscribingButton.TabIndex = 1;
+            this.GeoSubscribingButton.Text = " Geolocation";
+            this.GeoSubscribingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GeoSubscribingButton.UseVisualStyleBackColor = true;
+            this.GeoSubscribingButton.Click += new System.EventHandler(this.GeoSubscribingButton_Click);
+            // 
             // LikingTasks
             // 
             this.LikingTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.LikingTasks.Controls.Add(this.CommentsLiking);
+            this.LikingTasks.Controls.Add(this.FollowersLiking);
+            this.LikingTasks.Controls.Add(this.GeoLocationLiking);
+            this.LikingTasks.Controls.Add(this.UserSubscribersLiking);
+            this.LikingTasks.Controls.Add(this.HashtagLiking);
+            this.LikingTasks.Controls.Add(this.ListLiking);
             this.LikingTasks.Location = new System.Drawing.Point(0, 0);
             this.LikingTasks.Name = "LikingTasks";
             this.LikingTasks.Size = new System.Drawing.Size(274, 494);
             this.LikingTasks.TabIndex = 7;
             // 
-            // SubscriningTasks
+            // TaskPreview
             // 
-            this.SubscriningTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.SubscriningTasks.Controls.Add(this.button11);
-            this.SubscriningTasks.Controls.Add(this.button10);
-            this.SubscriningTasks.Controls.Add(this.button9);
-            this.SubscriningTasks.Controls.Add(this.button8);
-            this.SubscriningTasks.Controls.Add(this.button5);
-            this.SubscriningTasks.Controls.Add(this.button7);
-            this.SubscriningTasks.Location = new System.Drawing.Point(0, 0);
-            this.SubscriningTasks.Name = "SubscriningTasks";
-            this.SubscriningTasks.Size = new System.Drawing.Size(274, 494);
-            this.SubscriningTasks.TabIndex = 6;
+            this.TaskPreview.Controls.Add(this.TaskDescription);
+            this.TaskPreview.Controls.Add(this.button4);
+            this.TaskPreview.Controls.Add(this.panel5);
+            this.TaskPreview.Location = new System.Drawing.Point(0, 0);
+            this.TaskPreview.Name = "TaskPreview";
+            this.TaskPreview.Size = new System.Drawing.Size(822, 494);
+            this.TaskPreview.TabIndex = 8;
+            // 
+            // TaskDescription
+            // 
+            this.TaskDescription.AutoSize = true;
+            this.TaskDescription.Font = new System.Drawing.Font("Montserrat Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TaskDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.TaskDescription.Location = new System.Drawing.Point(298, 145);
+            this.TaskDescription.Name = "TaskDescription";
+            this.TaskDescription.Size = new System.Drawing.Size(132, 29);
+            this.TaskDescription.TabIndex = 2;
+            this.TaskDescription.Text = "Description";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(274, 420);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(548, 74);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "   Create Task";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.panel5.Controls.Add(this.TaskNameInDescriptionPanel);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(823, 120);
+            this.panel5.TabIndex = 0;
+            // 
+            // TaskNameInDescriptionPanel
+            // 
+            this.TaskNameInDescriptionPanel.AutoSize = true;
+            this.TaskNameInDescriptionPanel.Font = new System.Drawing.Font("Montserrat Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TaskNameInDescriptionPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.TaskNameInDescriptionPanel.Location = new System.Drawing.Point(295, 36);
+            this.TaskNameInDescriptionPanel.Name = "TaskNameInDescriptionPanel";
+            this.TaskNameInDescriptionPanel.Size = new System.Drawing.Size(123, 44);
+            this.TaskNameInDescriptionPanel.TabIndex = 2;
+            this.TaskNameInDescriptionPanel.Text = "Name";
             // 
             // subscribingTasksButton
             // 
@@ -502,31 +640,40 @@
             this.LikingTasksButton.UseVisualStyleBackColor = false;
             this.LikingTasksButton.Click += new System.EventHandler(this.LikingTasksButton_Click);
             // 
-            // ConcurentsSubscribing
+            // CompetitorsSubscribing
             // 
-            this.ConcurentsSubscribing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
-            this.ConcurentsSubscribing.Controls.Add(this.button2);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox6);
-            this.ConcurentsSubscribing.Controls.Add(this.label14);
-            this.ConcurentsSubscribing.Controls.Add(this.radioButton4);
-            this.ConcurentsSubscribing.Controls.Add(this.radioButton3);
-            this.ConcurentsSubscribing.Controls.Add(this.label13);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox5);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox4);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox3);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox2);
-            this.ConcurentsSubscribing.Controls.Add(this.radioButton2);
-            this.ConcurentsSubscribing.Controls.Add(this.radioButton1);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox1ConcurentsSubscribing);
-            this.ConcurentsSubscribing.Controls.Add(this.checkBox1);
-            this.ConcurentsSubscribing.Controls.Add(this.label12);
-            this.ConcurentsSubscribing.Controls.Add(this.textBox1);
-            this.ConcurentsSubscribing.Controls.Add(this.label11);
-            this.ConcurentsSubscribing.Controls.Add(this.pictureBox13);
-            this.ConcurentsSubscribing.Location = new System.Drawing.Point(0, 0);
-            this.ConcurentsSubscribing.Name = "ConcurentsSubscribing";
-            this.ConcurentsSubscribing.Size = new System.Drawing.Size(823, 571);
-            this.ConcurentsSubscribing.TabIndex = 8;
+            this.CompetitorsSubscribing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
+            this.CompetitorsSubscribing.Controls.Add(this.listBox1);
+            this.CompetitorsSubscribing.Controls.Add(this.button2);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox6);
+            this.CompetitorsSubscribing.Controls.Add(this.label14);
+            this.CompetitorsSubscribing.Controls.Add(this.radioButton4);
+            this.CompetitorsSubscribing.Controls.Add(this.radioButton3);
+            this.CompetitorsSubscribing.Controls.Add(this.label13);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox5);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox4);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox3);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox2);
+            this.CompetitorsSubscribing.Controls.Add(this.radioButton2);
+            this.CompetitorsSubscribing.Controls.Add(this.radioButton1);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox1ConcurentsSubscribing);
+            this.CompetitorsSubscribing.Controls.Add(this.checkBox1);
+            this.CompetitorsSubscribing.Controls.Add(this.label12);
+            this.CompetitorsSubscribing.Controls.Add(this.textBox1);
+            this.CompetitorsSubscribing.Controls.Add(this.label11);
+            this.CompetitorsSubscribing.Controls.Add(this.pictureBox13);
+            this.CompetitorsSubscribing.Location = new System.Drawing.Point(0, 0);
+            this.CompetitorsSubscribing.Name = "CompetitorsSubscribing";
+            this.CompetitorsSubscribing.Size = new System.Drawing.Size(823, 571);
+            this.CompetitorsSubscribing.TabIndex = 8;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(501, 20);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(231, 43);
+            this.listBox1.TabIndex = 18;
             // 
             // button2
             // 
@@ -1168,182 +1315,135 @@
             this.Logo.Size = new System.Drawing.Size(121, 114);
             this.Logo.TabIndex = 0;
             // 
-            // panel2
+            // ListLiking
             // 
-            this.panel2.Controls.Add(this.SubcribingPanel);
-            this.panel2.Controls.Add(this.LikingPanel);
-            this.panel2.Location = new System.Drawing.Point(0, 74);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(822, 494);
-            this.panel2.TabIndex = 9;
+            this.ListLiking.FlatAppearance.BorderSize = 0;
+            this.ListLiking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ListLiking.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListLiking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.ListLiking.Location = new System.Drawing.Point(0, 207);
+            this.ListLiking.Name = "ListLiking";
+            this.ListLiking.Size = new System.Drawing.Size(274, 69);
+            this.ListLiking.TabIndex = 4;
+            this.ListLiking.Text = " List";
+            this.ListLiking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ListLiking.UseVisualStyleBackColor = true;
+            this.ListLiking.Click += new System.EventHandler(this.ListLiking_Click);
             // 
-            // LikingPanel
+            // HashtagLiking
             // 
-            this.LikingPanel.Controls.Add(this.panel4);
-            this.LikingPanel.Controls.Add(this.LikingTasks);
-            this.LikingPanel.Location = new System.Drawing.Point(0, 0);
-            this.LikingPanel.Name = "LikingPanel";
-            this.LikingPanel.Size = new System.Drawing.Size(822, 497);
-            this.LikingPanel.TabIndex = 8;
+            this.HashtagLiking.FlatAppearance.BorderSize = 0;
+            this.HashtagLiking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HashtagLiking.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HashtagLiking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.HashtagLiking.Location = new System.Drawing.Point(0, 138);
+            this.HashtagLiking.Name = "HashtagLiking";
+            this.HashtagLiking.Size = new System.Drawing.Size(274, 69);
+            this.HashtagLiking.TabIndex = 5;
+            this.HashtagLiking.Text = " Hashtag";
+            this.HashtagLiking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HashtagLiking.UseVisualStyleBackColor = true;
+            this.HashtagLiking.Click += new System.EventHandler(this.HashtagLiking_Click);
             // 
-            // SubcribingPanel
+            // UserSubscribersLiking
             // 
-            this.SubcribingPanel.Controls.Add(this.ConcurentsSubscribingPreview);
-            this.SubcribingPanel.Controls.Add(this.SubscriningTasks);
-            this.SubcribingPanel.Location = new System.Drawing.Point(0, 0);
-            this.SubcribingPanel.Name = "SubcribingPanel";
-            this.SubcribingPanel.Size = new System.Drawing.Size(821, 497);
-            this.SubcribingPanel.TabIndex = 0;
+            this.UserSubscribersLiking.FlatAppearance.BorderSize = 0;
+            this.UserSubscribersLiking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserSubscribersLiking.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UserSubscribersLiking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.UserSubscribersLiking.Location = new System.Drawing.Point(0, 0);
+            this.UserSubscribersLiking.Name = "UserSubscribersLiking";
+            this.UserSubscribersLiking.Size = new System.Drawing.Size(274, 69);
+            this.UserSubscribersLiking.TabIndex = 6;
+            this.UserSubscribersLiking.Text = " User Subscribers";
+            this.UserSubscribersLiking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UserSubscribersLiking.UseVisualStyleBackColor = true;
+            this.UserSubscribersLiking.Click += new System.EventHandler(this.UserSubscribersLiking_Click);
             // 
-            // ConcurentsSubscribingPreview
+            // GeoLocationLiking
             // 
-            this.ConcurentsSubscribingPreview.Controls.Add(this.button3);
-            this.ConcurentsSubscribingPreview.Controls.Add(this.panel3);
-            this.ConcurentsSubscribingPreview.Location = new System.Drawing.Point(274, 0);
-            this.ConcurentsSubscribingPreview.Name = "ConcurentsSubscribingPreview";
-            this.ConcurentsSubscribingPreview.Size = new System.Drawing.Size(547, 497);
-            this.ConcurentsSubscribingPreview.TabIndex = 7;
+            this.GeoLocationLiking.FlatAppearance.BorderSize = 0;
+            this.GeoLocationLiking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GeoLocationLiking.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GeoLocationLiking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.GeoLocationLiking.Location = new System.Drawing.Point(0, 69);
+            this.GeoLocationLiking.Name = "GeoLocationLiking";
+            this.GeoLocationLiking.Size = new System.Drawing.Size(274, 69);
+            this.GeoLocationLiking.TabIndex = 7;
+            this.GeoLocationLiking.Text = " Geolocation";
+            this.GeoLocationLiking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GeoLocationLiking.UseVisualStyleBackColor = true;
+            this.GeoLocationLiking.Click += new System.EventHandler(this.GeoLocationLiking_Click);
             // 
-            // panel3
+            // FollowersLiking
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(549, 120);
-            this.panel3.TabIndex = 0;
+            this.FollowersLiking.FlatAppearance.BorderSize = 0;
+            this.FollowersLiking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FollowersLiking.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FollowersLiking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.FollowersLiking.Location = new System.Drawing.Point(0, 276);
+            this.FollowersLiking.Name = "FollowersLiking";
+            this.FollowersLiking.Size = new System.Drawing.Size(274, 69);
+            this.FollowersLiking.TabIndex = 4;
+            this.FollowersLiking.Text = " Followers";
+            this.FollowersLiking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FollowersLiking.UseVisualStyleBackColor = true;
+            this.FollowersLiking.Click += new System.EventHandler(this.FollowersLiking_Click);
             // 
-            // button3
+            // CommentsLiking
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 420);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(548, 74);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "   Create Task";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.CommentsLiking.FlatAppearance.BorderSize = 0;
+            this.CommentsLiking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CommentsLiking.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CommentsLiking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.CommentsLiking.Location = new System.Drawing.Point(0, 345);
+            this.CommentsLiking.Name = "CommentsLiking";
+            this.CommentsLiking.Size = new System.Drawing.Size(274, 69);
+            this.CommentsLiking.TabIndex = 5;
+            this.CommentsLiking.Text = " Comments";
+            this.CommentsLiking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CommentsLiking.UseVisualStyleBackColor = true;
+            this.CommentsLiking.Click += new System.EventHandler(this.CommentsLiking_Click);
             // 
-            // panel4
+            // TechnicalTasks
             // 
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(274, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(548, 494);
-            this.panel4.TabIndex = 8;
+            this.TechnicalTasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.TechnicalTasks.Controls.Add(this.NonFollowersUnsubscribingButton);
+            this.TechnicalTasks.Controls.Add(this.UnfollowFollowingButton);
+            this.TechnicalTasks.Location = new System.Drawing.Point(0, 0);
+            this.TechnicalTasks.Name = "TechnicalTasks";
+            this.TechnicalTasks.Size = new System.Drawing.Size(274, 494);
+            this.TechnicalTasks.TabIndex = 9;
             // 
-            // button4
+            // NonFollowersUnsubscribingButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(0, 420);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(548, 74);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "   Create Task";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.NonFollowersUnsubscribingButton.FlatAppearance.BorderSize = 0;
+            this.NonFollowersUnsubscribingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NonFollowersUnsubscribingButton.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NonFollowersUnsubscribingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.NonFollowersUnsubscribingButton.Location = new System.Drawing.Point(0, 0);
+            this.NonFollowersUnsubscribingButton.Name = "NonFollowersUnsubscribingButton";
+            this.NonFollowersUnsubscribingButton.Size = new System.Drawing.Size(274, 69);
+            this.NonFollowersUnsubscribingButton.TabIndex = 3;
+            this.NonFollowersUnsubscribingButton.Text = " Unfollow Non Followers";
+            this.NonFollowersUnsubscribingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NonFollowersUnsubscribingButton.UseVisualStyleBackColor = true;
+            this.NonFollowersUnsubscribingButton.Click += new System.EventHandler(this.NonFollowersUnsubscribingButton_Click);
             // 
-            // panel5
+            // UnfollowFollowingButton
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(549, 120);
-            this.panel5.TabIndex = 0;
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(274, 69);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "button5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button7.Location = new System.Drawing.Point(0, 69);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(274, 69);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "button7";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button8.Location = new System.Drawing.Point(0, 138);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(274, 69);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "button8";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button9.Location = new System.Drawing.Point(0, 207);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(274, 69);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "button9";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button10.Location = new System.Drawing.Point(0, 276);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(274, 69);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "button10";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button11.Location = new System.Drawing.Point(0, 345);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(274, 69);
-            this.button11.TabIndex = 5;
-            this.button11.Text = "button11";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
+            this.UnfollowFollowingButton.FlatAppearance.BorderSize = 0;
+            this.UnfollowFollowingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UnfollowFollowingButton.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UnfollowFollowingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.UnfollowFollowingButton.Location = new System.Drawing.Point(0, 69);
+            this.UnfollowFollowingButton.Name = "UnfollowFollowingButton";
+            this.UnfollowFollowingButton.Size = new System.Drawing.Size(274, 69);
+            this.UnfollowFollowingButton.TabIndex = 1;
+            this.UnfollowFollowingButton.Text = " Unfollow Following";
+            this.UnfollowFollowingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UnfollowFollowingButton.UseVisualStyleBackColor = true;
+            this.UnfollowFollowingButton.Click += new System.EventHandler(this.UnfollowFollowingButton_Click);
             // 
             // Main
             // 
@@ -1374,9 +1474,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
             this.SoftWindow.ResumeLayout(false);
             this.Tasks.ResumeLayout(false);
-            this.SubscriningTasks.ResumeLayout(false);
-            this.ConcurentsSubscribing.ResumeLayout(false);
-            this.ConcurentsSubscribing.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.SubscribingTasks.ResumeLayout(false);
+            this.LikingTasks.ResumeLayout(false);
+            this.TaskPreview.ResumeLayout(false);
+            this.TaskPreview.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.CompetitorsSubscribing.ResumeLayout(false);
+            this.CompetitorsSubscribing.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.Accounts.ResumeLayout(false);
             this.searchAccount.ResumeLayout(false);
@@ -1400,11 +1506,7 @@
             this.OrangeLine.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox5)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.LikingPanel.ResumeLayout(false);
-            this.SubcribingPanel.ResumeLayout(false);
-            this.ConcurentsSubscribingPreview.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.TechnicalTasks.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1470,11 +1572,11 @@
         private System.Windows.Forms.Button TechnicalTasksButton;
         private System.Windows.Forms.Button LikingTasksButton;
         private System.Windows.Forms.Panel LikingTasks;
-        private System.Windows.Forms.Panel SubscriningTasks;
+        private System.Windows.Forms.Panel SubscribingTasks;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Panel ConcurentsSubscribing;
+        private System.Windows.Forms.Panel CompetitorsSubscribing;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
@@ -1494,20 +1596,25 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel SubcribingPanel;
-        private System.Windows.Forms.Panel ConcurentsSubscribingPreview;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel LikingPanel;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel TaskPreview;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button ListSubscribingButton;
+        private System.Windows.Forms.Button HashtagSubscribingButton;
+        private System.Windows.Forms.Button CompetitorsSubscribingListButton;
+        private System.Windows.Forms.Button GeoSubscribingButton;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label TaskNameInDescriptionPanel;
+        private System.Windows.Forms.Label TaskDescription;
+        private System.Windows.Forms.Button GeoLocationLiking;
+        private System.Windows.Forms.Button UserSubscribersLiking;
+        private System.Windows.Forms.Button HashtagLiking;
+        private System.Windows.Forms.Button ListLiking;
+        private System.Windows.Forms.Button CommentsLiking;
+        private System.Windows.Forms.Button FollowersLiking;
+        private System.Windows.Forms.Panel TechnicalTasks;
+        private System.Windows.Forms.Button NonFollowersUnsubscribingButton;
+        private System.Windows.Forms.Button UnfollowFollowingButton;
     }
 }
 

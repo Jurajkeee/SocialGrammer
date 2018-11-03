@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
             {
                 if (File.Exists(Environment.CurrentDirectory + "/accounts.xml"))
                 {
-                    DeserializeAccountsLogins();
+                    DeserializeAccountsData();
                     Logger.LogMessage(accounts_data.accounts.Length.ToString());
                 }
                 else
@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void DeserializeAccountsLogins()
+        private void DeserializeAccountsData()
         {
             Logger.LogMessage("Deserializing XML");           
             string path = Environment.CurrentDirectory + "/accounts.xml";
@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
         }
         private void SerializeAccountsLogins()
         {
+            
             XmlSerializer serializer = new XmlSerializer(typeof(AccountsCollection));
             TextWriter writer = new StreamWriter(Environment.CurrentDirectory + "/accounts.xml");
             serializer.Serialize(writer, accounts_data);
