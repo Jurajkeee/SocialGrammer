@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
                 if (File.Exists(Environment.CurrentDirectory + "/accounts.xml"))
                 {
                     DeserializeAccountsData();
-                    Logger.LogMessage(accounts_data.accounts.Length.ToString());
+                    //Logger.LogMessage(accounts_data.accounts.Length.ToString());
                 }
                 else
                 {

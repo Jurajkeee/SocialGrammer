@@ -68,12 +68,38 @@ namespace WindowsFormsApp1
             try
             {
                 account_name.Text = info.accounts_data.accounts[id].login;
+                ChangeStatus(info.accounts_data.accounts[id].status);
                 Logger.LogMessage(account_id.ToString());
             }
             catch (Exception)
             {
                 Logger.LogError("Accounts not found");
             }
+        }
+        public void ChangeStatus(string status)
+        {
+            switch (status)
+            {
+                case "not-active":
+                    statusPicture.BackgroundImage = WindowsFormsApp1.Properties.Resources.Ellipse_2;
+                    break;
+                case "active":
+                    statusPicture.BackgroundImage = WindowsFormsApp1.Properties.Resources.working;
+                    break;
+                case "error":
+                    statusPicture.BackgroundImage = WindowsFormsApp1.Properties.Resources.error;
+                    break;
+            }
+        }
+        public void ChangeStatus(string status, string message)
+        {
+            switch (status)
+            {
+                case "not-active": break;
+                case "active": break;
+                case "error": break;
+            }
+            //Set Message Code
         }
         private void CloseApp_Click(object sender, EventArgs e)
         {
@@ -84,7 +110,7 @@ namespace WindowsFormsApp1
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void Button1_Click(object sender, EventArgs e)
+        private void LogInButton_Click(object sender, EventArgs e)
         {
             LoginWindow.Visible = false;
             SoftWindow.Visible = true;
@@ -179,6 +205,7 @@ namespace WindowsFormsApp1
             accountLoginPass.Visible = false;
             CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
+            EditAccountPanel.Visible = false;
 
         }
 
@@ -192,6 +219,7 @@ namespace WindowsFormsApp1
             Settings.Visible = false;
             CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
+            EditAccountPanel.Visible = false;
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -204,6 +232,7 @@ namespace WindowsFormsApp1
             Settings.Visible = false;
             CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
+            EditAccountPanel.Visible = false;
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -216,6 +245,7 @@ namespace WindowsFormsApp1
             Settings.Visible = true;
             CompetitorsSubscribing.Visible = false;
             accountLoginPass.Visible = false;
+            EditAccountPanel.Visible = false;
         }
 
         
@@ -224,7 +254,7 @@ namespace WindowsFormsApp1
             Account account = new Account();       
             account.login = loginTextBox1.Text;
             account.password = passwordTextBox.Text;
-            account.status = "logging in";
+            account.status = "not-active";
             LogSendMessage(account.login);
             LogSendMessage(account.password);
             info.accounts_data.AddAccount(account);
@@ -307,7 +337,7 @@ namespace WindowsFormsApp1
         
      
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void CreateTask_Click(object sender, EventArgs e)
         {
             OpenTaskCreationSettings(choosedTaskForCreation);
         }
@@ -408,6 +438,30 @@ namespace WindowsFormsApp1
             TaskDescription.Text = "Task unsubscribes from all users " + Environment.NewLine + "that you're following";
         }
 
+        private void SubmitChangesAccount_Click(object sender, EventArgs e)
+        {
+            info.accounts_data.accounts[account_id].login = newLogin.Text;
+            info.accounts_data.accounts[account_id].password = newPassword.Text;
+            EditAccountPanel.Visible = false;
+
+        }
+
+        private void deleteAccount_Click(object sender, EventArgs e)
+        {
+            info.accounts_data.accounts.RemoveAt(account_id);
+            EditAccountPanel.Visible = false;
+            UpdateAccountInfo(account_id);
+            info.Save();
+        }
+
+        private void editAccount_Click(object sender, EventArgs e)
+        {
+            EditAccountPanel.BringToFront();
+            EditAccountPanel.Visible = true;
+            UpdateAccountInfo(account_id);
+            info.Save();
+        }
+
         private void AccountLeft_Click(object sender, EventArgs e)
         {
             Logger.LogMessage(account_id.ToString());
@@ -418,14 +472,14 @@ namespace WindowsFormsApp1
                     UpdateAccountInfo(--account_id);
                 }
                 else {
-                    account_id = info.accounts_data.accounts.Length-1;
+                    account_id = info.accounts_data.accounts.Count-1;
                     UpdateAccountInfo(account_id);
                 }
 
             }
             catch (Exception)
             {
-                account_id = info.accounts_data.accounts.Length-1;
+                account_id = info.accounts_data.accounts.Count-1;
                 UpdateAccountInfo(account_id);
                 Logger.LogError("Out of borders");
             }
@@ -437,9 +491,14 @@ namespace WindowsFormsApp1
         {          
             try
             {
-                if (account_id < info.accounts_data.accounts.Length)
+                if (account_id < info.accounts_data.accounts.Count)
                 {
                     UpdateAccountInfo(++account_id);                   
+                }
+                else
+                {
+                    account_id = 0;
+                    UpdateAccountInfo(account_id);
                 }
             }
             catch (Exception)

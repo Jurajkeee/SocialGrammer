@@ -2,15 +2,15 @@
 <AccountsBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Accounts>
     <Account>
-      <login>gfdsgdfs</login>
-      <password>sfgfdgsfd</password>
-      <status>logging in</status>
+      <login>im_raptured</login>
+      <password>gfadfsdr132142sfdas</password>
+      <status>not-active</status>
       <Tasks />
     </Account>
     <Account>
       <login>Yurii_Fedorkevich</login>
       <password>jura2123</password>
-      <status>logging in</status>
+      <status>active</status>
       <Tasks />
     </Account>
   </Accounts>

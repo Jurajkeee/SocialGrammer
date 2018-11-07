@@ -1,38 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace WindowsFormsApp1
 {
-    [Serializable]
-    [System.Xml.Serialization.XmlRoot("AccountsBase")]
-    public class AccountsCollection
-    {
-        [XmlArray("Accounts")]
-        [XmlArrayItem("Account", typeof(Account))]
-        public Account[] accounts = new Account[0];
-        public void AddAccount(Account account)
+
+        [Serializable]
+        [System.Xml.Serialization.XmlRoot("AccountsBase")]
+        public class AccountsCollection
         {
-
-            try
+            [XmlArray("Accounts")]
+            [XmlArrayItem("Account", typeof(Account))]
+            public List<Account> accounts = new List<Account> { };
+            public void AddAccount(Account account)
             {
-                Account[] finalArray = new Account[accounts.Length + 1];
-                for (int i = 0; i < accounts.Length; i++ ) {
-                    finalArray[i] = accounts[i];
-                }
-                finalArray[finalArray.Length - 1] = account;
-                accounts = finalArray;
-                Logger.LogMessage("Account added");
-                
-                for(int i=0; i<accounts.Length; i++)
-                {
-                    Logger.LogMessage(accounts[i].login);
-                }
-
+            accounts.Add(account);
             }
-            catch (Exception e)
-            {
-                Logger.LogError("Failed to add Account ::" + e);
-            }
+        public void RemoveAccount(Account account)
+        {
+            accounts.Remove(account);
         }
     }
 }

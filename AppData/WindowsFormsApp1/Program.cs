@@ -20,8 +20,6 @@ namespace WindowsFormsApp1
             inizializedMain = new Main();
             Application.Run(inizializedMain);               
         }
-
-        
     }
     
 }
