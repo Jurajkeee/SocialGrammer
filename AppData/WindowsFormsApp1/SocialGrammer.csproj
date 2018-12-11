@@ -48,7 +48,9 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountsCollection.cs" />
     <Compile Include="CuncurentsSubscribing.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="InfoManager.cs" />
+    <Compile Include="ListSubscribing.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>

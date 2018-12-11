@@ -1,7 +1,9 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Xml.Serialization;
 
 namespace WindowsFormsApp1
 {
+    [Serializable()]
     public class CuncurentsSubscribing : Task
     {
         [XmlArray("Aim Accounts")]
@@ -49,6 +51,7 @@ namespace WindowsFormsApp1
             this.smart_mode = smart_mode;
 
         }
+        private CuncurentsSubscribing() { }
 
     }
 }

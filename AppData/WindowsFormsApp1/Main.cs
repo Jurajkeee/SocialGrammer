@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,14 +15,10 @@ namespace WindowsFormsApp1
 {
     public partial class Main : Form
     {
-        public  InfoManager info;
+        #region Variables  
+        //variables
+        public InfoManager info;
         public int account_id;
-
-        public Main()
-        {
-            InitializeComponent();
-            
-        }
 
         private bool drag;
         private int mousex;
@@ -29,10 +26,18 @@ namespace WindowsFormsApp1
 
         public int firstButton, secondButton, thirdButton;
         public Button currentActive;
-        
 
-        private void Main_Load(object sender, EventArgs e)
+        public string choosedTaskForCreation;
+        #endregion
+        #region Essential
+        public Main()
         {
+            InitializeComponent();
+            
+        }
+        private void Main_Load(object sender, EventArgs e) //On Start
+        {
+            
             info = new InfoManager();
             info.LoadData();
             UpdateAccountInfo(0);
@@ -45,6 +50,9 @@ namespace WindowsFormsApp1
             Logger.LogMessage(firstButton.ToString() +"::"+ secondButton.ToString() + "::"+ thirdButton.ToString());
             UpdateTasksButtons(LikingTasksButton);
         }
+        #endregion
+
+        #region BackEnd Methods
         public void UpdateTasksButtons(Button active)
         {
             Point p = active.Location;
@@ -89,33 +97,66 @@ namespace WindowsFormsApp1
                 case "error":
                     statusPicture.BackgroundImage = WindowsFormsApp1.Properties.Resources.error;
                     break;
+                    
             }
         }
-        public void ChangeStatus(string status, string message)
+        public void LogSendMessage(string message)
         {
-            switch (status)
-            {
-                case "not-active": break;
-                case "active": break;
-                case "error": break;
-            }
-            //Set Message Code
+            appConsole.Text += "  " + message + System.Environment.NewLine;
+            CheckLogOutOfForm();
         }
+        private void CheckLogOutOfForm()
+        {
+            if (appConsole.Height + 5 > Settings.Height) appConsole.Text ="LOG: ";
+        }
+        public void OpenTaskCreationSettings(string task)
+        {
+            switch (task)
+            {
+                case "userfollowersSubscribing":
+                    CompetitorsSubscribing.BringToFront();
+                    CompetitorsSubscribing.Visible = true;
+                    UpdateComboBox(CompetitorsSubscribingAccountsComboBox);
+                    Logger.LogMessage("Competitors Subscribing Task");
+                    break;
+                case "geolocationSubscribing":
+                    Logger.LogError("Not Implemented");
+                    break;
+                case "hashtagSubscribing":
+                    Logger.LogError("Not Implemented");
+                    break;
+                case "listSubscribing":
+                    Logger.LogError("Not Implemented");
+                    break;
+            }
+            
+        }
+        public void UpdateComboBox(ComboBox comboBox)
+        {
+            for (int i = 0; i < info.accounts_data.accounts.Count; i++)
+            {
+                comboBox.Items.Add(info.accounts_data.accounts[i].login);
+            }
+            
+        }
+        public string[] TurnStringIntoArray(string field)
+        {
+            var result = field.Split(' ');
+            Logger.LogMessage(result.ToString());
+            return result;
+        }
+        #endregion
+
+        #region Close Hide Panel
         private void CloseApp_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void HideApp_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void LogInButton_Click(object sender, EventArgs e)
-        {
-            LoginWindow.Visible = false;
-            SoftWindow.Visible = true;
-        }
-
+        #region Movable Panel Implementation
         private void TopPanel_MouseMove(object sender, MouseEventArgs e)
         {
             if (drag)
@@ -136,7 +177,18 @@ namespace WindowsFormsApp1
         {
             drag = false;
         }
+        #endregion
+        #endregion
+        #region LogIn in App Panel
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            LoginWindow.Visible = false;
+            SoftWindow.Visible = true;
+        }
 
+        #endregion
+
+        #region Visual Effects
         private void Button2_MouseHover(object sender, EventArgs e)
         {
             AccountsButton.Text = "              accounts";
@@ -185,15 +237,16 @@ namespace WindowsFormsApp1
             SettingsButton.Text = "          settings";
             PictureBox9.Size = new Size(29, 33);
         }
-
-        private void Button6_Click(object sender, EventArgs e)
+        #endregion
+        #region Right Menu
+        private void Button6_Click(object sender, EventArgs e) //Log Out Button
         {
             LoginWindow.Visible = true;
 
             SoftWindow.Visible = false;
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e) //Accounts Window Open
         {
             
             Label2.Text = "Accounts";
@@ -209,7 +262,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e) //Tasks Window Open
         {
             
             Label2.Text = "Tasks";
@@ -222,7 +275,7 @@ namespace WindowsFormsApp1
             EditAccountPanel.Visible = false;
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e) //Stats Window Open
         {
            
             Label2.Text = "Stats";
@@ -235,7 +288,7 @@ namespace WindowsFormsApp1
             EditAccountPanel.Visible = false;
         }
 
-        private void Button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e) //Settings Window Open
         {
             
             Label2.Text = "Settings";
@@ -248,7 +301,9 @@ namespace WindowsFormsApp1
             EditAccountPanel.Visible = false;
         }
 
-        
+        #endregion
+
+        #region Accounts Panel
         private void ConfirmAddingAccount_Click(object sender, EventArgs e)
         {
             Account account = new Account();       
@@ -261,8 +316,6 @@ namespace WindowsFormsApp1
             info.Save();
             UpdateAccountInfo(account_id);
             accountLoginPass.Visible = false;
-            
-
         }
 
         private void AddAccountButton_Click(object sender, EventArgs e)
@@ -272,23 +325,68 @@ namespace WindowsFormsApp1
             loginTextBox1.Text = "";
             passwordTextBox.Text = "";
         }
-
-        public void LogWriteClick()
+        private void deleteAccount_Click(object sender, EventArgs e)
         {
-            StackTrace stackTrace = new StackTrace();            
-            appConsole.Text += stackTrace.GetFrame(1).GetMethod().Name + System.Environment.NewLine;
-            CheckLogOutOfForm();
-        }
-        public void LogSendMessage(string message)
-        {
-            appConsole.Text += "  " + message + System.Environment.NewLine;
-            CheckLogOutOfForm();
-        }
-        private void CheckLogOutOfForm()
-        {
-            if (appConsole.Height + 5 > Settings.Height) appConsole.Text ="LOG: ";
+            info.accounts_data.accounts.RemoveAt(account_id);
+            EditAccountPanel.Visible = false;
+            UpdateAccountInfo(account_id);
+            info.Save();
         }
 
+        private void editAccount_Click(object sender, EventArgs e)
+        {
+            EditAccountPanel.BringToFront();
+            EditAccountPanel.Visible = true;
+            UpdateAccountInfo(account_id);
+            info.Save();
+        }
+        private void AccountLeft_Click(object sender, EventArgs e)
+        {
+            Logger.LogMessage(account_id.ToString());
+            try
+            {
+                if (account_id > 0)
+                {
+                    UpdateAccountInfo(--account_id);
+                }
+                else {
+                    account_id = info.accounts_data.accounts.Count-1;
+                    UpdateAccountInfo(account_id);
+                }
+
+            }
+            catch (Exception)
+            {
+                account_id = info.accounts_data.accounts.Count-1;
+                UpdateAccountInfo(account_id);
+                Logger.LogError("Out of borders");
+            }
+        }
+        private void AccountRight_Click(object sender, EventArgs e)
+        {          
+            try
+            {
+                if (account_id < info.accounts_data.accounts.Count)
+                {
+                    UpdateAccountInfo(++account_id);                   
+                }
+                else
+                {
+                    account_id = 0;
+                    UpdateAccountInfo(account_id);
+                }
+            }
+            catch (Exception)
+            {
+                account_id = 0;
+                UpdateAccountInfo(account_id);
+                Logger.LogError("Out of borders");
+            }
+
+        }
+        #endregion
+        #region Tasks Panel
+        #region UpperButtons
         private void subscribingTasksButton_Click(object sender, EventArgs e)
         {
             UpdateTasksButtons(subscribingTasksButton);
@@ -312,56 +410,14 @@ namespace WindowsFormsApp1
             LikingTasks.Visible = true;
             TechnicalTasks.Visible = false;
         }
+        #endregion
 
- 
-
-       
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            //CreateTask
-            CompetitorsSubscribing.Visible = false;
-            
-        }
-
-       
-
-        
-
+        #region SubscribingTasksMenu
         private void CompetitiorsSubscribingListButton_Click(object sender, EventArgs e)
         {
             choosedTaskForCreation = "userfollowersSubscribing";
             TaskNameInDescriptionPanel.Text = "User Followers Subscribing";
             TaskDescription.Text = "Task subscribing on followers "+ Environment.NewLine + "that follows specified accounts";
-        }
-        
-     
-
-        private void CreateTask_Click(object sender, EventArgs e)
-        {
-            OpenTaskCreationSettings(choosedTaskForCreation);
-        }
-        public string choosedTaskForCreation;
-         public void OpenTaskCreationSettings(string task)
-        {
-            switch (task)
-            {
-                case "userfollowersSubscribing":
-                    CompetitorsSubscribing.BringToFront();
-                    CompetitorsSubscribing.Visible = true;
-                    Logger.LogMessage("Competitors Subscribing Task");
-                    break;
-                case "geolocationSubscribing":
-                    Logger.LogError("Not Implemented");
-                    break;
-                case "hashtagSubscribing":
-                    Logger.LogError("Not Implemented");
-                    break;
-                case "listSubscribing":
-                    Logger.LogError("Not Implemented");
-                    break;
-            }
-            
         }
         private void GeoSubscribingButton_Click(object sender, EventArgs e)
         {
@@ -381,7 +437,8 @@ namespace WindowsFormsApp1
             TaskNameInDescriptionPanel.Text = "List Subscribing";
             TaskDescription.Text = "Task subscribing on users " + Environment.NewLine + "in list";
         }
-        //Liking Tasks
+        #endregion   
+        #region LikingTasksMenu
         private void GeoLocationLiking_Click(object sender, EventArgs e)
         {
             choosedTaskForCreation = "";
@@ -423,7 +480,8 @@ namespace WindowsFormsApp1
             TaskNameInDescriptionPanel.Text = "Comments Liking";
             TaskDescription.Text = "Task liking users " + Environment.NewLine + "comments in specified accounts";
         }
-        //Technical
+        #endregion
+        #region TechnicalTasksMenu
         private void NonFollowersUnsubscribingButton_Click(object sender, EventArgs e)
         {
             choosedTaskForCreation = "";
@@ -437,78 +495,30 @@ namespace WindowsFormsApp1
             TaskNameInDescriptionPanel.Text = "Following Unsubsribing";
             TaskDescription.Text = "Task unsubscribes from all users " + Environment.NewLine + "that you're following";
         }
+        #endregion
 
+        #region TaskWindow
+        private void CreateTask_Click(object sender, EventArgs e)
+        {
+            OpenTaskCreationSettings(choosedTaskForCreation);
+        }
         private void SubmitChangesAccount_Click(object sender, EventArgs e)
         {
             info.accounts_data.accounts[account_id].login = newLogin.Text;
             info.accounts_data.accounts[account_id].password = newPassword.Text;
             EditAccountPanel.Visible = false;
-
         }
-
-        private void deleteAccount_Click(object sender, EventArgs e)
+        private void CompetitorsSubscribingButtonSubmit_Click(object sender, EventArgs e)
         {
-            info.accounts_data.accounts.RemoveAt(account_id);
-            EditAccountPanel.Visible = false;
-            UpdateAccountInfo(account_id);
+            var account = CompetitorsSubscribingAccountsComboBox.SelectedItem.ToString();            
+            CuncurentsSubscribing task = new CuncurentsSubscribing(account, TurnStringIntoArray(aimAccountsCompetitprsSubscription.ToString()),false,true,true,true,true,40,200,10,500,20,true);
+            info.accounts_data.accounts.Find(x => x.login.Contains(account)).AddTask(task);
+            CompetitorsSubscribing.Close();            
             info.Save();
         }
-
-        private void editAccount_Click(object sender, EventArgs e)
-        {
-            EditAccountPanel.BringToFront();
-            EditAccountPanel.Visible = true;
-            UpdateAccountInfo(account_id);
-            info.Save();
-        }
-
-        private void AccountLeft_Click(object sender, EventArgs e)
-        {
-            Logger.LogMessage(account_id.ToString());
-            try
-            {
-                if (account_id > 0)
-                {
-                    UpdateAccountInfo(--account_id);
-                }
-                else {
-                    account_id = info.accounts_data.accounts.Count-1;
-                    UpdateAccountInfo(account_id);
-                }
-
-            }
-            catch (Exception)
-            {
-                account_id = info.accounts_data.accounts.Count-1;
-                UpdateAccountInfo(account_id);
-                Logger.LogError("Out of borders");
-            }
-        }
-
-        
-
-        private void AccountRight_Click(object sender, EventArgs e)
-        {          
-            try
-            {
-                if (account_id < info.accounts_data.accounts.Count)
-                {
-                    UpdateAccountInfo(++account_id);                   
-                }
-                else
-                {
-                    account_id = 0;
-                    UpdateAccountInfo(account_id);
-                }
-            }
-            catch (Exception)
-            {
-                account_id = 0;
-                UpdateAccountInfo(account_id);
-                Logger.LogError("Out of borders");
-            }
-
-        }
+        #endregion
+        #endregion
+       
     }
 
 }

@@ -14,11 +14,11 @@ namespace WindowsFormsApp1
             public List<Account> accounts = new List<Account> { };
             public void AddAccount(Account account)
             {
-            accounts.Add(account);
+                accounts.Add(account);
             }
-        public void RemoveAccount(Account account)
-        {
-            accounts.Remove(account);
+            public void RemoveAccount(Account account)
+            {
+                accounts.Remove(account);
+            }
         }
-    }
 }
