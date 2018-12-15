@@ -1,20 +1,30 @@
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SocialGrammer.csprojAssemblyReference.cache
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SocialGrammer.csproj.GenerateResource.cache
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SocialGrammer.csproj.CoreCompileInputs.cache
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\po4ta\Desktop\SocialGrammerC#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\SocialGrammer.csprojAssemblyReference.cache
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main.resources
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\SocialGrammer.csproj.GenerateResource.cache
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\SocialGrammer.csproj.CoreCompileInputs.cache
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/SocialGrammer.csprojAssemblyReference.cache
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.Form1.resources
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.Properties.Resources.resources
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/SocialGrammer.csproj.GenerateResource.cache
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/SocialGrammer.csproj.CoreCompileInputs.cache
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.exe
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.pdb
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe.config
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe
+C:/Users/po4ta/Desktop/SocialGrammerC#/WindowsFormsApp1/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.pdb
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe.config
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.pdb
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/SocialGrammer.csprojAssemblyReference.cache
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.Main.resources
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.Properties.Resources.resources
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/SocialGrammer.csproj.GenerateResource.cache
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/SocialGrammer.csproj.CoreCompileInputs.cache
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.exe
+C:/Users/po4ta/Desktop/SocialGrammerC#/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.pdb
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe.config
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.pdb
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/SocialGrammer.csprojAssemblyReference.cache
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.Main.resources
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.Properties.Resources.resources
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/SocialGrammer.csproj.GenerateResource.cache
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/SocialGrammer.csproj.CoreCompileInputs.cache
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.exe
+/Users/macbookproretina/Downloads/Disk F/SocialGrammer/AppData/WindowsFormsApp1/obj/Debug/WindowsFormsApp1.pdb

@@ -53,6 +53,10 @@ namespace WindowsFormsApp1
         #endregion
 
         #region BackEnd Methods
+        public Account FindAccount(string account)
+        {
+            return info.accounts_data.accounts.Find(x => x.login.Contains(account));
+        }
         public void UpdateTasksButtons(Button active)
         {
             Point p = active.Location;
@@ -512,7 +516,6 @@ namespace WindowsFormsApp1
         {
             var account = CompetitorsSubscribingAccountsComboBox.SelectedItem.ToString();            
             CuncurentsSubscribing task = new CuncurentsSubscribing(account, TurnStringIntoArray(aimAccountsCompetitprsSubscription.ToString()),false,true,true,true,true,40,200,10,500,20,true);
-            info.accounts_data.accounts.Find(x => x.login.Contains(account)).AddTask(task);
             CompetitorsSubscribing.Close();            
             info.Save();
         }

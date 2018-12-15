@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace WindowsFormsApp1
@@ -9,7 +10,6 @@ namespace WindowsFormsApp1
     {
         [System.Xml.Serialization.XmlElement("account_login")]
         public string account_login;
-       
-        
     }
+
 }
