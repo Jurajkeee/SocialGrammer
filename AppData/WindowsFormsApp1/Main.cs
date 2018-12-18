@@ -28,6 +28,7 @@ namespace WindowsFormsApp1
         public Button currentActive;
 
         public string choosedTaskForCreation;
+        public Panel currentActiveWindow;
         #endregion
         #region Essential
         public Main()
@@ -49,6 +50,8 @@ namespace WindowsFormsApp1
             
             Logger.LogMessage(firstButton.ToString() +"::"+ secondButton.ToString() + "::"+ thirdButton.ToString());
             UpdateTasksButtons(LikingTasksButton);
+
+            currentActiveWindow = Accounts;
         }
         #endregion
 
@@ -245,69 +248,81 @@ namespace WindowsFormsApp1
         #region Right Menu
         private void Button6_Click(object sender, EventArgs e) //Log Out Button
         {
-            LoginWindow.Visible = true;
-
-            SoftWindow.Visible = false;
+            LoginWindow.Open();
+            TasksEdit.Visible = false;
+            EditAccountPanel.Visible = false;
+            accountLoginPass.Visible = false;
+            CompetitorsSubscribing.Visible = false;
         }
 
         private void Button2_Click(object sender, EventArgs e) //Accounts Window Open
         {
             
             Label2.Text = "Accounts";
-            Accounts.Visible = true;
-            Tasks.Visible = false;
-            Stats.Visible = false;
-            Settings.Visible = false;
-
+            Accounts.Open();
+            TasksEdit.Visible = false;
+            EditAccountPanel.Visible = false;
             accountLoginPass.Visible = false;
             CompetitorsSubscribing.Visible = false;
-            accountLoginPass.Visible = false;
-            EditAccountPanel.Visible = false;
-
         }
 
         private void Button3_Click(object sender, EventArgs e) //Tasks Window Open
         {
             
             Label2.Text = "Tasks";
-            Accounts.Visible =false;
-            Tasks.Visible = true;
-            Stats.Visible = false;
-            Settings.Visible = false;
-            CompetitorsSubscribing.Visible = false;
-            accountLoginPass.Visible = false;
+            Tasks.Open();
+            TasksEdit.Visible = false;
             EditAccountPanel.Visible = false;
+            accountLoginPass.Visible = false;
+
+            CompetitorsSubscribing.Visible = false;
         }
 
         private void Button4_Click(object sender, EventArgs e) //Stats Window Open
         {
            
             Label2.Text = "Stats";
-            Accounts.Visible = false;
-            Tasks.Visible = false;
-            Stats.Visible = true;
-            Settings.Visible = false;
-            CompetitorsSubscribing.Visible = false;
-            accountLoginPass.Visible = false;
+            Stats.Open();
+            TasksEdit.Visible = false;
             EditAccountPanel.Visible = false;
+            accountLoginPass.Visible = false;
+            CompetitorsSubscribing.Visible = false;
         }
 
         private void Button5_Click(object sender, EventArgs e) //Settings Window Open
         {
             
             Label2.Text = "Settings";
-            Accounts.Visible = false;
-            Tasks.Visible = false;
-            Stats.Visible = false;
-            Settings.Visible = true;
-            CompetitorsSubscribing.Visible = false;
-            accountLoginPass.Visible = false;
+            Settings.Open();
+            TasksEdit.Visible = false;
             EditAccountPanel.Visible = false;
+            accountLoginPass.Visible = false;
+            CompetitorsSubscribing.Visible = false;
         }
 
         #endregion
 
         #region Accounts Panel
+        private void SubmitChangesAccount_Click(object sender, EventArgs e)
+        {
+            info.accounts_data.accounts[account_id].login = newLogin.Text;
+            info.accounts_data.accounts[account_id].password = newPassword.Text;
+            EditAccountPanel.Visible = false;
+        }
+        private void accountsTasksEditButton_Click(object sender, EventArgs e)
+        {
+            TasksEdit.Open();
+        }
+        private void statusPicture_MouseHover(object sender, EventArgs e)
+        {
+            StatusPopUp.Visible = true;
+            statusInPopUp.Text = info.accounts_data.accounts[account_id].status;
+        }
+        private void statusPicture_MouseLeave(object sender, EventArgs e)
+        {
+            StatusPopUp.Visible = false;
+            
+        }
         private void ConfirmAddingAccount_Click(object sender, EventArgs e)
         {
             Account account = new Account();       
@@ -319,28 +334,26 @@ namespace WindowsFormsApp1
             info.accounts_data.AddAccount(account);
             info.Save();
             UpdateAccountInfo(account_id);
-            accountLoginPass.Visible = false;
+            Accounts.Open();
         }
 
         private void AddAccountButton_Click(object sender, EventArgs e)
         {
-            accountLoginPass.Visible = true;
-            accountLoginPass.BringToFront();
+            accountLoginPass.Open();
             loginTextBox1.Text = "";
             passwordTextBox.Text = "";
         }
         private void deleteAccount_Click(object sender, EventArgs e)
         {
             info.accounts_data.accounts.RemoveAt(account_id);
-            EditAccountPanel.Visible = false;
+            Accounts.Open();
             UpdateAccountInfo(account_id);
             info.Save();
         }
 
         private void editAccount_Click(object sender, EventArgs e)
         {
-            EditAccountPanel.BringToFront();
-            EditAccountPanel.Visible = true;
+            EditAccountPanel.Open();
             UpdateAccountInfo(account_id);
             info.Save();
         }
@@ -506,12 +519,7 @@ namespace WindowsFormsApp1
         {
             OpenTaskCreationSettings(choosedTaskForCreation);
         }
-        private void SubmitChangesAccount_Click(object sender, EventArgs e)
-        {
-            info.accounts_data.accounts[account_id].login = newLogin.Text;
-            info.accounts_data.accounts[account_id].password = newPassword.Text;
-            EditAccountPanel.Visible = false;
-        }
+       
         private void CompetitorsSubscribingButtonSubmit_Click(object sender, EventArgs e)
         {
             var account = CompetitorsSubscribingAccountsComboBox.SelectedItem.ToString();            

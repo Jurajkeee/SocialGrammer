@@ -34,19 +34,37 @@
             this.StatsButton = new System.Windows.Forms.Button();
             this.TasksButton = new System.Windows.Forms.Button();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.HideApp = new System.Windows.Forms.PictureBox();
-            this.CloseApp = new System.Windows.Forms.PictureBox();
             this.AccountsButton = new System.Windows.Forms.Button();
             this.LeftMenu = new System.Windows.Forms.Panel();
-            this.PictureBox10 = new System.Windows.Forms.PictureBox();
-            this.PictureBox9 = new System.Windows.Forms.PictureBox();
-            this.PictureBox8 = new System.Windows.Forms.PictureBox();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.SoftMenuLogoPanel = new System.Windows.Forms.Panel();
-            this.PictureBox7 = new System.Windows.Forms.PictureBox();
             this.SoftWindow = new System.Windows.Forms.Panel();
+            this.Accounts = new System.Windows.Forms.Panel();
+            this.searchAccount = new System.Windows.Forms.Panel();
+            this.SearchLine = new System.Windows.Forms.Panel();
+            this.accountsList = new System.Windows.Forms.Panel();
+            this.AddAccountButton = new System.Windows.Forms.Button();
+            this.accountInfo = new System.Windows.Forms.Panel();
+            this.accountsTasksEditButton = new System.Windows.Forms.Button();
+            this.editAccount = new System.Windows.Forms.Button();
+            this.youFollowedToday = new System.Windows.Forms.Label();
+            this.follow_you = new System.Windows.Forms.Label();
+            this.youFollowing = new System.Windows.Forms.Label();
+            this.followedToday = new System.Windows.Forms.Label();
+            this.account_name = new System.Windows.Forms.Label();
+            this.accountLoginPass = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.PassTextBox = new System.Windows.Forms.Label();
+            this.loginTextBox = new System.Windows.Forms.Label();
+            this.ConfirmAddingAccount = new System.Windows.Forms.Button();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.loginTextBox1 = new System.Windows.Forms.TextBox();
+            this.EditAccountPanel = new System.Windows.Forms.Panel();
+            this.deleteAccount = new System.Windows.Forms.Button();
+            this.SubmitChangesAccount = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.newPassword = new System.Windows.Forms.TextBox();
+            this.newLogin = new System.Windows.Forms.TextBox();
             this.Tasks = new System.Windows.Forms.Panel();
             this.CompetitorsSubscribing = new System.Windows.Forms.Panel();
             this.CompetitorsSubscribingAccountsComboBox = new System.Windows.Forms.ComboBox();
@@ -67,7 +85,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.aimAccountsCompetitprsSubscription = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LikingTasks = new System.Windows.Forms.Panel();
             this.CommentsLiking = new System.Windows.Forms.Button();
@@ -89,48 +106,45 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.TaskNameInDescriptionPanel = new System.Windows.Forms.Label();
-            this.subscribingTasksButton = new System.Windows.Forms.Button();
-            this.TechnicalTasksButton = new System.Windows.Forms.Button();
-            this.LikingTasksButton = new System.Windows.Forms.Button();
-            this.Accounts = new System.Windows.Forms.Panel();
-            this.searchAccount = new System.Windows.Forms.Panel();
-            this.SearchButton = new System.Windows.Forms.Panel();
-            this.SearchLine = new System.Windows.Forms.Panel();
-            this.accountsList = new System.Windows.Forms.Panel();
-            this.AddAccountButton = new System.Windows.Forms.Button();
-            this.AccountRight = new System.Windows.Forms.Panel();
-            this.AccountLeft = new System.Windows.Forms.Panel();
-            this.accountInfo = new System.Windows.Forms.Panel();
-            this.statusPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.editAccount = new System.Windows.Forms.Button();
-            this.youFollowedToday = new System.Windows.Forms.Label();
-            this.follow_you = new System.Windows.Forms.Label();
-            this.youFollowing = new System.Windows.Forms.Label();
-            this.followedToday = new System.Windows.Forms.Label();
-            this.account_name = new System.Windows.Forms.Label();
-            this.accountLoginPass = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.PassTextBox = new System.Windows.Forms.Label();
-            this.loginTextBox = new System.Windows.Forms.Label();
-            this.ConfirmAddingAccount = new System.Windows.Forms.Button();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.loginTextBox1 = new System.Windows.Forms.TextBox();
-            this.EditAccountPanel = new System.Windows.Forms.Panel();
-            this.deleteAccount = new System.Windows.Forms.Button();
-            this.SubmitChangesAccount = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.newPassword = new System.Windows.Forms.TextBox();
-            this.newLogin = new System.Windows.Forms.TextBox();
             this.Header = new System.Windows.Forms.Panel();
             this.Label2 = new System.Windows.Forms.Label();
             this.Settings = new System.Windows.Forms.Panel();
             this.Stats = new System.Windows.Forms.Panel();
             this.appConsole = new System.Windows.Forms.Label();
+            this.TasksEdit = new System.Windows.Forms.Panel();
+            this.TaskSlot1 = new System.Windows.Forms.Panel();
+            this.TaskSlot2 = new System.Windows.Forms.Panel();
+            this.TaskSlot3 = new System.Windows.Forms.Panel();
+            this.TaskSlot4 = new System.Windows.Forms.Panel();
+            this.TaskSlot5 = new System.Windows.Forms.Panel();
+            this.TaskSlot6 = new System.Windows.Forms.Panel();
+            this.TaskSlotName1 = new System.Windows.Forms.TextBox();
+            this.TaskSlotName2 = new System.Windows.Forms.TextBox();
+            this.TaskSlotName3 = new System.Windows.Forms.TextBox();
+            this.TaskSlotName4 = new System.Windows.Forms.TextBox();
+            this.TaskSlotName5 = new System.Windows.Forms.TextBox();
+            this.TaskSlotName6 = new System.Windows.Forms.TextBox();
+            this.HideApp = new System.Windows.Forms.PictureBox();
+            this.CloseApp = new System.Windows.Forms.PictureBox();
+            this.SearchButton = new System.Windows.Forms.Panel();
+            this.AccountRight = new System.Windows.Forms.Panel();
+            this.AccountLeft = new System.Windows.Forms.Panel();
+            this.StatusPopUp = new System.Windows.Forms.Panel();
+            this.statusPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.subscribingTasksButton = new System.Windows.Forms.Button();
+            this.TechnicalTasksButton = new System.Windows.Forms.Button();
+            this.LikingTasksButton = new System.Windows.Forms.Button();
+            this.PictureBox7 = new System.Windows.Forms.PictureBox();
+            this.PictureBox10 = new System.Windows.Forms.PictureBox();
+            this.PictureBox9 = new System.Windows.Forms.PictureBox();
+            this.PictureBox8 = new System.Windows.Forms.PictureBox();
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoginWindow = new System.Windows.Forms.Panel();
             this.PictureBox4 = new System.Windows.Forms.PictureBox();
             this.PictureBox3 = new System.Windows.Forms.PictureBox();
@@ -142,42 +156,51 @@
             this.PictureBox5 = new System.Windows.Forms.PictureBox();
             this.SocialGrammerText = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.Panel();
+            this.statusInPopUp = new System.Windows.Forms.TextBox();
             this.TopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HideApp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).BeginInit();
             this.LeftMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SoftMenuLogoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
             this.SoftWindow.SuspendLayout();
+            this.Accounts.SuspendLayout();
+            this.searchAccount.SuspendLayout();
+            this.accountsList.SuspendLayout();
+            this.accountInfo.SuspendLayout();
+            this.accountLoginPass.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.EditAccountPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.Tasks.SuspendLayout();
             this.CompetitorsSubscribing.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel2.SuspendLayout();
             this.LikingTasks.SuspendLayout();
             this.TechnicalTasks.SuspendLayout();
             this.SubscribingTasks.SuspendLayout();
             this.TaskPreview.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.Accounts.SuspendLayout();
-            this.searchAccount.SuspendLayout();
-            this.accountsList.SuspendLayout();
-            this.accountInfo.SuspendLayout();
+            this.Header.SuspendLayout();
+            this.Stats.SuspendLayout();
+            this.TasksEdit.SuspendLayout();
+            this.TaskSlot1.SuspendLayout();
+            this.TaskSlot2.SuspendLayout();
+            this.TaskSlot3.SuspendLayout();
+            this.TaskSlot4.SuspendLayout();
+            this.TaskSlot5.SuspendLayout();
+            this.TaskSlot6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HideApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).BeginInit();
+            this.StatusPopUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.accountLoginPass.SuspendLayout();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.EditAccountPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.Header.SuspendLayout();
-            this.Stats.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.LoginWindow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
@@ -281,30 +304,6 @@
             this.TopPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             this.TopPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseUp);
             // 
-            // HideApp
-            // 
-            this.HideApp.BackColor = System.Drawing.Color.Transparent;
-            this.HideApp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Hide;
-            this.HideApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HideApp.Location = new System.Drawing.Point(962, 9);
-            this.HideApp.Name = "HideApp";
-            this.HideApp.Size = new System.Drawing.Size(15, 15);
-            this.HideApp.TabIndex = 3;
-            this.HideApp.TabStop = false;
-            this.HideApp.Click += new System.EventHandler(this.HideApp_Click);
-            // 
-            // CloseApp
-            // 
-            this.CloseApp.BackColor = System.Drawing.Color.Transparent;
-            this.CloseApp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Close;
-            this.CloseApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CloseApp.Location = new System.Drawing.Point(983, 9);
-            this.CloseApp.Name = "CloseApp";
-            this.CloseApp.Size = new System.Drawing.Size(15, 15);
-            this.CloseApp.TabIndex = 2;
-            this.CloseApp.TabStop = false;
-            this.CloseApp.Click += new System.EventHandler(this.CloseApp_Click);
-            // 
             // AccountsButton
             // 
             this.AccountsButton.BackColor = System.Drawing.Color.Transparent;
@@ -343,61 +342,6 @@
             this.LeftMenu.Size = new System.Drawing.Size(187, 584);
             this.LeftMenu.TabIndex = 0;
             // 
-            // PictureBox10
-            // 
-            this.PictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox10.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBox10.Location = new System.Drawing.Point(31, 544);
-            this.PictureBox10.Name = "PictureBox10";
-            this.PictureBox10.Size = new System.Drawing.Size(29, 21);
-            this.PictureBox10.TabIndex = 9;
-            this.PictureBox10.TabStop = false;
-            // 
-            // PictureBox9
-            // 
-            this.PictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings;
-            this.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBox9.Location = new System.Drawing.Point(31, 260);
-            this.PictureBox9.Name = "PictureBox9";
-            this.PictureBox9.Size = new System.Drawing.Size(29, 33);
-            this.PictureBox9.TabIndex = 7;
-            this.PictureBox9.TabStop = false;
-            // 
-            // PictureBox8
-            // 
-            this.PictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox8.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.monitor;
-            this.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBox8.Location = new System.Drawing.Point(31, 193);
-            this.PictureBox8.Name = "PictureBox8";
-            this.PictureBox8.Size = new System.Drawing.Size(29, 33);
-            this.PictureBox8.TabIndex = 5;
-            this.PictureBox8.TabStop = false;
-            // 
-            // PictureBox2
-            // 
-            this.PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings_1;
-            this.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBox2.Location = new System.Drawing.Point(31, 126);
-            this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(29, 33);
-            this.PictureBox2.TabIndex = 3;
-            this.PictureBox2.TabStop = false;
-            // 
-            // PictureBox1
-            // 
-            this.PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.avatar;
-            this.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBox1.Location = new System.Drawing.Point(31, 59);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(29, 33);
-            this.PictureBox1.TabIndex = 1;
-            this.PictureBox1.TabStop = false;
-            // 
             // Label1
             // 
             this.Label1.AutoSize = true;
@@ -420,16 +364,6 @@
             this.SoftMenuLogoPanel.Size = new System.Drawing.Size(187, 121);
             this.SoftMenuLogoPanel.TabIndex = 0;
             // 
-            // PictureBox7
-            // 
-            this.PictureBox7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logo;
-            this.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PictureBox7.Location = new System.Drawing.Point(44, 35);
-            this.PictureBox7.Name = "PictureBox7";
-            this.PictureBox7.Size = new System.Drawing.Size(85, 50);
-            this.PictureBox7.TabIndex = 0;
-            this.PictureBox7.TabStop = false;
-            // 
             // SoftWindow
             // 
             this.SoftWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
@@ -445,14 +379,325 @@
             this.SoftWindow.Size = new System.Drawing.Size(1009, 695);
             this.SoftWindow.TabIndex = 7;
             // 
+            // Accounts
+            // 
+            this.Accounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.Accounts.Controls.Add(this.searchAccount);
+            this.Accounts.Controls.Add(this.accountsList);
+            this.Accounts.Controls.Add(this.accountInfo);
+            this.Accounts.Controls.Add(this.accountLoginPass);
+            this.Accounts.Controls.Add(this.EditAccountPanel);
+            this.Accounts.Controls.Add(this.TasksEdit);
+            this.Accounts.Location = new System.Drawing.Point(187, 121);
+            this.Accounts.Name = "Accounts";
+            this.Accounts.Size = new System.Drawing.Size(822, 568);
+            this.Accounts.TabIndex = 1;
+            // 
+            // searchAccount
+            // 
+            this.searchAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(82)))), ((int)(((byte)(95)))));
+            this.searchAccount.Controls.Add(this.SearchButton);
+            this.searchAccount.Controls.Add(this.SearchLine);
+            this.searchAccount.Location = new System.Drawing.Point(0, 230);
+            this.searchAccount.Name = "searchAccount";
+            this.searchAccount.Size = new System.Drawing.Size(828, 47);
+            this.searchAccount.TabIndex = 1;
+            // 
+            // SearchLine
+            // 
+            this.SearchLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.SearchLine.Location = new System.Drawing.Point(581, 34);
+            this.SearchLine.Name = "SearchLine";
+            this.SearchLine.Size = new System.Drawing.Size(188, 1);
+            this.SearchLine.TabIndex = 0;
+            // 
+            // accountsList
+            // 
+            this.accountsList.Controls.Add(this.AddAccountButton);
+            this.accountsList.Controls.Add(this.AccountRight);
+            this.accountsList.Controls.Add(this.AccountLeft);
+            this.accountsList.Location = new System.Drawing.Point(0, 271);
+            this.accountsList.Name = "accountsList";
+            this.accountsList.Size = new System.Drawing.Size(822, 297);
+            this.accountsList.TabIndex = 2;
+            // 
+            // AddAccountButton
+            // 
+            this.AddAccountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.AddAccountButton.FlatAppearance.BorderSize = 0;
+            this.AddAccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddAccountButton.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddAccountButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.AddAccountButton.Location = new System.Drawing.Point(271, 104);
+            this.AddAccountButton.Name = "AddAccountButton";
+            this.AddAccountButton.Size = new System.Drawing.Size(279, 77);
+            this.AddAccountButton.TabIndex = 9;
+            this.AddAccountButton.Text = "Add Account";
+            this.AddAccountButton.UseVisualStyleBackColor = false;
+            this.AddAccountButton.Click += new System.EventHandler(this.AddAccountButton_Click);
+            // 
+            // accountInfo
+            // 
+            this.accountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
+            this.accountInfo.Controls.Add(this.StatusPopUp);
+            this.accountInfo.Controls.Add(this.statusPicture);
+            this.accountInfo.Controls.Add(this.pictureBox15);
+            this.accountInfo.Controls.Add(this.accountsTasksEditButton);
+            this.accountInfo.Controls.Add(this.pictureBox14);
+            this.accountInfo.Controls.Add(this.editAccount);
+            this.accountInfo.Controls.Add(this.youFollowedToday);
+            this.accountInfo.Controls.Add(this.follow_you);
+            this.accountInfo.Controls.Add(this.youFollowing);
+            this.accountInfo.Controls.Add(this.followedToday);
+            this.accountInfo.Controls.Add(this.account_name);
+            this.accountInfo.Location = new System.Drawing.Point(0, 0);
+            this.accountInfo.Name = "accountInfo";
+            this.accountInfo.Size = new System.Drawing.Size(822, 235);
+            this.accountInfo.TabIndex = 0;
+            // 
+            // accountsTasksEditButton
+            // 
+            this.accountsTasksEditButton.FlatAppearance.BorderSize = 0;
+            this.accountsTasksEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.accountsTasksEditButton.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.accountsTasksEditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.accountsTasksEditButton.Location = new System.Drawing.Point(717, 48);
+            this.accountsTasksEditButton.Name = "accountsTasksEditButton";
+            this.accountsTasksEditButton.Size = new System.Drawing.Size(101, 42);
+            this.accountsTasksEditButton.TabIndex = 9;
+            this.accountsTasksEditButton.Text = "tasks";
+            this.accountsTasksEditButton.UseVisualStyleBackColor = true;
+            this.accountsTasksEditButton.Click += new System.EventHandler(this.accountsTasksEditButton_Click);
+            // 
+            // editAccount
+            // 
+            this.editAccount.FlatAppearance.BorderSize = 0;
+            this.editAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editAccount.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.editAccount.Location = new System.Drawing.Point(717, 7);
+            this.editAccount.Name = "editAccount";
+            this.editAccount.Size = new System.Drawing.Size(101, 42);
+            this.editAccount.TabIndex = 7;
+            this.editAccount.Text = "edit";
+            this.editAccount.UseVisualStyleBackColor = true;
+            this.editAccount.Click += new System.EventHandler(this.editAccount_Click);
+            // 
+            // youFollowedToday
+            // 
+            this.youFollowedToday.AutoSize = true;
+            this.youFollowedToday.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.youFollowedToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.youFollowedToday.Location = new System.Drawing.Point(33, 172);
+            this.youFollowedToday.Name = "youFollowedToday";
+            this.youFollowedToday.Size = new System.Drawing.Size(302, 30);
+            this.youFollowedToday.TabIndex = 6;
+            this.youFollowedToday.Text = "0 you have followed today";
+            // 
+            // follow_you
+            // 
+            this.follow_you.AutoSize = true;
+            this.follow_you.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.follow_you.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.follow_you.Location = new System.Drawing.Point(33, 64);
+            this.follow_you.Name = "follow_you";
+            this.follow_you.Size = new System.Drawing.Size(157, 30);
+            this.follow_you.TabIndex = 3;
+            this.follow_you.Text = "0 follows you";
+            // 
+            // youFollowing
+            // 
+            this.youFollowing.AutoSize = true;
+            this.youFollowing.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.youFollowing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.youFollowing.Location = new System.Drawing.Point(33, 100);
+            this.youFollowing.Name = "youFollowing";
+            this.youFollowing.Size = new System.Drawing.Size(208, 30);
+            this.youFollowing.TabIndex = 4;
+            this.youFollowing.Text = "0 you\'re following";
+            // 
+            // followedToday
+            // 
+            this.followedToday.AutoSize = true;
+            this.followedToday.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.followedToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.followedToday.Location = new System.Drawing.Point(33, 136);
+            this.followedToday.Name = "followedToday";
+            this.followedToday.Size = new System.Drawing.Size(243, 30);
+            this.followedToday.TabIndex = 5;
+            this.followedToday.Text = "0 followed you today";
+            // 
+            // account_name
+            // 
+            this.account_name.AutoSize = true;
+            this.account_name.BackColor = System.Drawing.Color.Transparent;
+            this.account_name.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.account_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.account_name.Location = new System.Drawing.Point(29, 20);
+            this.account_name.Name = "account_name";
+            this.account_name.Size = new System.Drawing.Size(187, 37);
+            this.account_name.TabIndex = 2;
+            this.account_name.Text = "Emily_Gross";
+            // 
+            // accountLoginPass
+            // 
+            this.accountLoginPass.Controls.Add(this.panel9);
+            this.accountLoginPass.Location = new System.Drawing.Point(0, -1);
+            this.accountLoginPass.Name = "accountLoginPass";
+            this.accountLoginPass.Size = new System.Drawing.Size(823, 568);
+            this.accountLoginPass.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.panel9.Controls.Add(this.pictureBox11);
+            this.panel9.Controls.Add(this.pictureBox12);
+            this.panel9.Controls.Add(this.PassTextBox);
+            this.panel9.Controls.Add(this.loginTextBox);
+            this.panel9.Controls.Add(this.ConfirmAddingAccount);
+            this.panel9.Controls.Add(this.passwordTextBox);
+            this.panel9.Controls.Add(this.loginTextBox1);
+            this.panel9.Location = new System.Drawing.Point(135, 87);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(518, 415);
+            this.panel9.TabIndex = 5;
+            // 
+            // PassTextBox
+            // 
+            this.PassTextBox.AutoSize = true;
+            this.PassTextBox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.PassTextBox.Location = new System.Drawing.Point(62, 211);
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.Size = new System.Drawing.Size(87, 22);
+            this.PassTextBox.TabIndex = 2;
+            this.PassTextBox.Text = "password";
+            // 
+            // loginTextBox
+            // 
+            this.loginTextBox.AutoSize = true;
+            this.loginTextBox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.loginTextBox.Location = new System.Drawing.Point(62, 103);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(50, 22);
+            this.loginTextBox.TabIndex = 3;
+            this.loginTextBox.Text = "login";
+            // 
+            // ConfirmAddingAccount
+            // 
+            this.ConfirmAddingAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.ConfirmAddingAccount.FlatAppearance.BorderSize = 0;
+            this.ConfirmAddingAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfirmAddingAccount.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ConfirmAddingAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.ConfirmAddingAccount.Location = new System.Drawing.Point(36, 298);
+            this.ConfirmAddingAccount.Name = "ConfirmAddingAccount";
+            this.ConfirmAddingAccount.Size = new System.Drawing.Size(436, 73);
+            this.ConfirmAddingAccount.TabIndex = 4;
+            this.ConfirmAddingAccount.Text = "    Submit Account";
+            this.ConfirmAddingAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConfirmAddingAccount.UseVisualStyleBackColor = false;
+            this.ConfirmAddingAccount.Click += new System.EventHandler(this.ConfirmAddingAccount_Click);
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextBox.Font = new System.Drawing.Font("Montserrat", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.passwordTextBox.Location = new System.Drawing.Point(66, 165);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(363, 22);
+            this.passwordTextBox.TabIndex = 1;
+            // 
+            // loginTextBox1
+            // 
+            this.loginTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
+            this.loginTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loginTextBox1.Font = new System.Drawing.Font("Montserrat", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.loginTextBox1.Location = new System.Drawing.Point(66, 63);
+            this.loginTextBox1.Name = "loginTextBox1";
+            this.loginTextBox1.Size = new System.Drawing.Size(363, 22);
+            this.loginTextBox1.TabIndex = 0;
+            // 
+            // EditAccountPanel
+            // 
+            this.EditAccountPanel.Controls.Add(this.deleteAccount);
+            this.EditAccountPanel.Controls.Add(this.SubmitChangesAccount);
+            this.EditAccountPanel.Controls.Add(this.panel3);
+            this.EditAccountPanel.Location = new System.Drawing.Point(0, 0);
+            this.EditAccountPanel.Name = "EditAccountPanel";
+            this.EditAccountPanel.Size = new System.Drawing.Size(821, 574);
+            this.EditAccountPanel.TabIndex = 5;
+            // 
+            // deleteAccount
+            // 
+            this.deleteAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(225)))), ((int)(((byte)(193)))));
+            this.deleteAccount.FlatAppearance.BorderSize = 0;
+            this.deleteAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteAccount.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deleteAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.deleteAccount.Location = new System.Drawing.Point(84, 56);
+            this.deleteAccount.Name = "deleteAccount";
+            this.deleteAccount.Size = new System.Drawing.Size(650, 38);
+            this.deleteAccount.TabIndex = 1;
+            this.deleteAccount.Text = "Delete Account";
+            this.deleteAccount.UseVisualStyleBackColor = false;
+            this.deleteAccount.Click += new System.EventHandler(this.deleteAccount_Click);
+            // 
+            // SubmitChangesAccount
+            // 
+            this.SubmitChangesAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
+            this.SubmitChangesAccount.FlatAppearance.BorderSize = 0;
+            this.SubmitChangesAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubmitChangesAccount.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SubmitChangesAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
+            this.SubmitChangesAccount.Location = new System.Drawing.Point(84, 439);
+            this.SubmitChangesAccount.Name = "SubmitChangesAccount";
+            this.SubmitChangesAccount.Size = new System.Drawing.Size(650, 62);
+            this.SubmitChangesAccount.TabIndex = 0;
+            this.SubmitChangesAccount.Text = "Submit Account";
+            this.SubmitChangesAccount.UseVisualStyleBackColor = false;
+            this.SubmitChangesAccount.Click += new System.EventHandler(this.SubmitChangesAccount_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(196)))), ((int)(((byte)(184)))));
+            this.panel3.Controls.Add(this.newPassword);
+            this.panel3.Controls.Add(this.newLogin);
+            this.panel3.Location = new System.Drawing.Point(84, 115);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(650, 288);
+            this.panel3.TabIndex = 0;
+            // 
+            // newPassword
+            // 
+            this.newPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.newPassword.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.newPassword.Location = new System.Drawing.Point(156, 187);
+            this.newPassword.Name = "newPassword";
+            this.newPassword.Size = new System.Drawing.Size(325, 24);
+            this.newPassword.TabIndex = 1;
+            // 
+            // newLogin
+            // 
+            this.newLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.newLogin.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.newLogin.Location = new System.Drawing.Point(155, 74);
+            this.newLogin.Name = "newLogin";
+            this.newLogin.Size = new System.Drawing.Size(325, 24);
+            this.newLogin.TabIndex = 0;
+            // 
             // Tasks
             // 
             this.Tasks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.Tasks.Controls.Add(this.CompetitorsSubscribing);
             this.Tasks.Controls.Add(this.panel2);
             this.Tasks.Controls.Add(this.subscribingTasksButton);
             this.Tasks.Controls.Add(this.TechnicalTasksButton);
             this.Tasks.Controls.Add(this.LikingTasksButton);
+            this.Tasks.Controls.Add(this.CompetitorsSubscribing);
             this.Tasks.Location = new System.Drawing.Point(187, 121);
             this.Tasks.Name = "Tasks";
             this.Tasks.Size = new System.Drawing.Size(822, 568);
@@ -700,16 +945,6 @@
             this.label11.Size = new System.Drawing.Size(272, 29);
             this.label11.TabIndex = 1;
             this.label11.Text = "Concurents Subscribing";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.SubcribeIcon;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox13.Location = new System.Drawing.Point(23, 23);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(47, 36);
-            this.pictureBox13.TabIndex = 0;
-            this.pictureBox13.TabStop = false;
             // 
             // panel2
             // 
@@ -996,433 +1231,6 @@
             this.TaskNameInDescriptionPanel.TabIndex = 2;
             this.TaskNameInDescriptionPanel.Text = "Name";
             // 
-            // subscribingTasksButton
-            // 
-            this.subscribingTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(139)))), ((int)(((byte)(91)))));
-            this.subscribingTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Subscribing;
-            this.subscribingTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.subscribingTasksButton.FlatAppearance.BorderSize = 0;
-            this.subscribingTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.subscribingTasksButton.Location = new System.Drawing.Point(548, 0);
-            this.subscribingTasksButton.Name = "subscribingTasksButton";
-            this.subscribingTasksButton.Size = new System.Drawing.Size(274, 76);
-            this.subscribingTasksButton.TabIndex = 2;
-            this.subscribingTasksButton.UseVisualStyleBackColor = false;
-            this.subscribingTasksButton.Click += new System.EventHandler(this.subscribingTasksButton_Click);
-            // 
-            // TechnicalTasksButton
-            // 
-            this.TechnicalTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(84)))));
-            this.TechnicalTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Technical;
-            this.TechnicalTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.TechnicalTasksButton.FlatAppearance.BorderSize = 0;
-            this.TechnicalTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TechnicalTasksButton.Location = new System.Drawing.Point(274, 0);
-            this.TechnicalTasksButton.Name = "TechnicalTasksButton";
-            this.TechnicalTasksButton.Size = new System.Drawing.Size(274, 76);
-            this.TechnicalTasksButton.TabIndex = 1;
-            this.TechnicalTasksButton.UseVisualStyleBackColor = false;
-            this.TechnicalTasksButton.Click += new System.EventHandler(this.TechnicalTasksButton_Click);
-            // 
-            // LikingTasksButton
-            // 
-            this.LikingTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(91)))), ((int)(((byte)(59)))));
-            this.LikingTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Liking;
-            this.LikingTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.LikingTasksButton.FlatAppearance.BorderSize = 0;
-            this.LikingTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LikingTasksButton.Location = new System.Drawing.Point(0, 0);
-            this.LikingTasksButton.Name = "LikingTasksButton";
-            this.LikingTasksButton.Size = new System.Drawing.Size(274, 76);
-            this.LikingTasksButton.TabIndex = 0;
-            this.LikingTasksButton.UseVisualStyleBackColor = false;
-            this.LikingTasksButton.Click += new System.EventHandler(this.LikingTasksButton_Click);
-            // 
-            // Accounts
-            // 
-            this.Accounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.Accounts.Controls.Add(this.searchAccount);
-            this.Accounts.Controls.Add(this.accountsList);
-            this.Accounts.Controls.Add(this.accountInfo);
-            this.Accounts.Controls.Add(this.accountLoginPass);
-            this.Accounts.Controls.Add(this.EditAccountPanel);
-            this.Accounts.Location = new System.Drawing.Point(187, 121);
-            this.Accounts.Name = "Accounts";
-            this.Accounts.Size = new System.Drawing.Size(822, 568);
-            this.Accounts.TabIndex = 1;
-            // 
-            // searchAccount
-            // 
-            this.searchAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(82)))), ((int)(((byte)(95)))));
-            this.searchAccount.Controls.Add(this.SearchButton);
-            this.searchAccount.Controls.Add(this.SearchLine);
-            this.searchAccount.Location = new System.Drawing.Point(0, 230);
-            this.searchAccount.Name = "searchAccount";
-            this.searchAccount.Size = new System.Drawing.Size(828, 47);
-            this.searchAccount.TabIndex = 1;
-            // 
-            // SearchButton
-            // 
-            this.SearchButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.magnifying_glass;
-            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SearchButton.Location = new System.Drawing.Point(784, 11);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(27, 24);
-            this.SearchButton.TabIndex = 0;
-            // 
-            // SearchLine
-            // 
-            this.SearchLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.SearchLine.Location = new System.Drawing.Point(581, 34);
-            this.SearchLine.Name = "SearchLine";
-            this.SearchLine.Size = new System.Drawing.Size(188, 1);
-            this.SearchLine.TabIndex = 0;
-            // 
-            // accountsList
-            // 
-            this.accountsList.Controls.Add(this.AddAccountButton);
-            this.accountsList.Controls.Add(this.AccountRight);
-            this.accountsList.Controls.Add(this.AccountLeft);
-            this.accountsList.Location = new System.Drawing.Point(0, 271);
-            this.accountsList.Name = "accountsList";
-            this.accountsList.Size = new System.Drawing.Size(822, 297);
-            this.accountsList.TabIndex = 2;
-            // 
-            // AddAccountButton
-            // 
-            this.AddAccountButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
-            this.AddAccountButton.FlatAppearance.BorderSize = 0;
-            this.AddAccountButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddAccountButton.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddAccountButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.AddAccountButton.Location = new System.Drawing.Point(271, 104);
-            this.AddAccountButton.Name = "AddAccountButton";
-            this.AddAccountButton.Size = new System.Drawing.Size(279, 77);
-            this.AddAccountButton.TabIndex = 9;
-            this.AddAccountButton.Text = "Add Account";
-            this.AddAccountButton.UseVisualStyleBackColor = false;
-            this.AddAccountButton.Click += new System.EventHandler(this.AddAccountButton_Click);
-            // 
-            // AccountRight
-            // 
-            this.AccountRight.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back1;
-            this.AccountRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AccountRight.Location = new System.Drawing.Point(756, 104);
-            this.AccountRight.Name = "AccountRight";
-            this.AccountRight.Size = new System.Drawing.Size(53, 77);
-            this.AccountRight.TabIndex = 1;
-            this.AccountRight.Click += new System.EventHandler(this.AccountRight_Click);
-            // 
-            // AccountLeft
-            // 
-            this.AccountLeft.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back;
-            this.AccountLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AccountLeft.Location = new System.Drawing.Point(17, 104);
-            this.AccountLeft.Name = "AccountLeft";
-            this.AccountLeft.Size = new System.Drawing.Size(53, 77);
-            this.AccountLeft.TabIndex = 0;
-            this.AccountLeft.Click += new System.EventHandler(this.AccountLeft_Click);
-            // 
-            // accountInfo
-            // 
-            this.accountInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(22)))));
-            this.accountInfo.Controls.Add(this.statusPicture);
-            this.accountInfo.Controls.Add(this.pictureBox15);
-            this.accountInfo.Controls.Add(this.button1);
-            this.accountInfo.Controls.Add(this.pictureBox14);
-            this.accountInfo.Controls.Add(this.editAccount);
-            this.accountInfo.Controls.Add(this.youFollowedToday);
-            this.accountInfo.Controls.Add(this.follow_you);
-            this.accountInfo.Controls.Add(this.youFollowing);
-            this.accountInfo.Controls.Add(this.followedToday);
-            this.accountInfo.Controls.Add(this.account_name);
-            this.accountInfo.Location = new System.Drawing.Point(0, 0);
-            this.accountInfo.Name = "accountInfo";
-            this.accountInfo.Size = new System.Drawing.Size(822, 235);
-            this.accountInfo.TabIndex = 0;
-            // 
-            // statusPicture
-            // 
-            this.statusPicture.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Ellipse_2;
-            this.statusPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.statusPicture.Location = new System.Drawing.Point(775, 186);
-            this.statusPicture.Name = "statusPicture";
-            this.statusPicture.Size = new System.Drawing.Size(15, 16);
-            this.statusPicture.TabIndex = 11;
-            this.statusPicture.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings_1;
-            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox15.Location = new System.Drawing.Point(700, 56);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(34, 29);
-            this.pictureBox15.TabIndex = 10;
-            this.pictureBox15.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.button1.Location = new System.Drawing.Point(717, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 42);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "tasks";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox14.Location = new System.Drawing.Point(700, 15);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(34, 29);
-            this.pictureBox14.TabIndex = 8;
-            this.pictureBox14.TabStop = false;
-            // 
-            // editAccount
-            // 
-            this.editAccount.FlatAppearance.BorderSize = 0;
-            this.editAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editAccount.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.editAccount.Location = new System.Drawing.Point(717, 7);
-            this.editAccount.Name = "editAccount";
-            this.editAccount.Size = new System.Drawing.Size(101, 42);
-            this.editAccount.TabIndex = 7;
-            this.editAccount.Text = "edit";
-            this.editAccount.UseVisualStyleBackColor = true;
-            this.editAccount.Click += new System.EventHandler(this.editAccount_Click);
-            // 
-            // youFollowedToday
-            // 
-            this.youFollowedToday.AutoSize = true;
-            this.youFollowedToday.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.youFollowedToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.youFollowedToday.Location = new System.Drawing.Point(33, 172);
-            this.youFollowedToday.Name = "youFollowedToday";
-            this.youFollowedToday.Size = new System.Drawing.Size(302, 30);
-            this.youFollowedToday.TabIndex = 6;
-            this.youFollowedToday.Text = "0 you have followed today";
-            // 
-            // follow_you
-            // 
-            this.follow_you.AutoSize = true;
-            this.follow_you.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.follow_you.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.follow_you.Location = new System.Drawing.Point(33, 64);
-            this.follow_you.Name = "follow_you";
-            this.follow_you.Size = new System.Drawing.Size(157, 30);
-            this.follow_you.TabIndex = 3;
-            this.follow_you.Text = "0 follows you";
-            // 
-            // youFollowing
-            // 
-            this.youFollowing.AutoSize = true;
-            this.youFollowing.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.youFollowing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.youFollowing.Location = new System.Drawing.Point(33, 100);
-            this.youFollowing.Name = "youFollowing";
-            this.youFollowing.Size = new System.Drawing.Size(208, 30);
-            this.youFollowing.TabIndex = 4;
-            this.youFollowing.Text = "0 you\'re following";
-            // 
-            // followedToday
-            // 
-            this.followedToday.AutoSize = true;
-            this.followedToday.Font = new System.Drawing.Font("Montserrat Light", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.followedToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.followedToday.Location = new System.Drawing.Point(33, 136);
-            this.followedToday.Name = "followedToday";
-            this.followedToday.Size = new System.Drawing.Size(243, 30);
-            this.followedToday.TabIndex = 5;
-            this.followedToday.Text = "0 followed you today";
-            // 
-            // account_name
-            // 
-            this.account_name.AutoSize = true;
-            this.account_name.BackColor = System.Drawing.Color.Transparent;
-            this.account_name.Font = new System.Drawing.Font("Montserrat", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.account_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
-            this.account_name.Location = new System.Drawing.Point(29, 20);
-            this.account_name.Name = "account_name";
-            this.account_name.Size = new System.Drawing.Size(187, 37);
-            this.account_name.TabIndex = 2;
-            this.account_name.Text = "Emily_Gross";
-            // 
-            // accountLoginPass
-            // 
-            this.accountLoginPass.Controls.Add(this.panel9);
-            this.accountLoginPass.Location = new System.Drawing.Point(0, -1);
-            this.accountLoginPass.Name = "accountLoginPass";
-            this.accountLoginPass.Size = new System.Drawing.Size(823, 568);
-            this.accountLoginPass.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
-            this.panel9.Controls.Add(this.pictureBox11);
-            this.panel9.Controls.Add(this.pictureBox12);
-            this.panel9.Controls.Add(this.PassTextBox);
-            this.panel9.Controls.Add(this.loginTextBox);
-            this.panel9.Controls.Add(this.ConfirmAddingAccount);
-            this.panel9.Controls.Add(this.passwordTextBox);
-            this.panel9.Controls.Add(this.loginTextBox1);
-            this.panel9.Location = new System.Drawing.Point(135, 87);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(518, 415);
-            this.panel9.TabIndex = 5;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
-            this.pictureBox11.Location = new System.Drawing.Point(64, 100);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(366, 1);
-            this.pictureBox11.TabIndex = 5;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
-            this.pictureBox12.Location = new System.Drawing.Point(64, 207);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(366, 1);
-            this.pictureBox12.TabIndex = 6;
-            this.pictureBox12.TabStop = false;
-            // 
-            // PassTextBox
-            // 
-            this.PassTextBox.AutoSize = true;
-            this.PassTextBox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PassTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.PassTextBox.Location = new System.Drawing.Point(62, 211);
-            this.PassTextBox.Name = "PassTextBox";
-            this.PassTextBox.Size = new System.Drawing.Size(87, 22);
-            this.PassTextBox.TabIndex = 2;
-            this.PassTextBox.Text = "password";
-            // 
-            // loginTextBox
-            // 
-            this.loginTextBox.AutoSize = true;
-            this.loginTextBox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.loginTextBox.Location = new System.Drawing.Point(62, 103);
-            this.loginTextBox.Name = "loginTextBox";
-            this.loginTextBox.Size = new System.Drawing.Size(50, 22);
-            this.loginTextBox.TabIndex = 3;
-            this.loginTextBox.Text = "login";
-            // 
-            // ConfirmAddingAccount
-            // 
-            this.ConfirmAddingAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
-            this.ConfirmAddingAccount.FlatAppearance.BorderSize = 0;
-            this.ConfirmAddingAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfirmAddingAccount.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ConfirmAddingAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.ConfirmAddingAccount.Location = new System.Drawing.Point(36, 298);
-            this.ConfirmAddingAccount.Name = "ConfirmAddingAccount";
-            this.ConfirmAddingAccount.Size = new System.Drawing.Size(436, 73);
-            this.ConfirmAddingAccount.TabIndex = 4;
-            this.ConfirmAddingAccount.Text = "    Submit Account";
-            this.ConfirmAddingAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ConfirmAddingAccount.UseVisualStyleBackColor = false;
-            this.ConfirmAddingAccount.Click += new System.EventHandler(this.ConfirmAddingAccount_Click);
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
-            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextBox.Font = new System.Drawing.Font("Montserrat", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.passwordTextBox.Location = new System.Drawing.Point(66, 165);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(363, 22);
-            this.passwordTextBox.TabIndex = 1;
-            // 
-            // loginTextBox1
-            // 
-            this.loginTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(44)))), ((int)(((byte)(63)))));
-            this.loginTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.loginTextBox1.Font = new System.Drawing.Font("Montserrat", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.loginTextBox1.Location = new System.Drawing.Point(66, 63);
-            this.loginTextBox1.Name = "loginTextBox1";
-            this.loginTextBox1.Size = new System.Drawing.Size(363, 22);
-            this.loginTextBox1.TabIndex = 0;
-            // 
-            // EditAccountPanel
-            // 
-            this.EditAccountPanel.Controls.Add(this.deleteAccount);
-            this.EditAccountPanel.Controls.Add(this.SubmitChangesAccount);
-            this.EditAccountPanel.Controls.Add(this.panel3);
-            this.EditAccountPanel.Location = new System.Drawing.Point(0, 0);
-            this.EditAccountPanel.Name = "EditAccountPanel";
-            this.EditAccountPanel.Size = new System.Drawing.Size(821, 574);
-            this.EditAccountPanel.TabIndex = 5;
-            // 
-            // deleteAccount
-            // 
-            this.deleteAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(225)))), ((int)(((byte)(193)))));
-            this.deleteAccount.FlatAppearance.BorderSize = 0;
-            this.deleteAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteAccount.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.deleteAccount.Location = new System.Drawing.Point(84, 56);
-            this.deleteAccount.Name = "deleteAccount";
-            this.deleteAccount.Size = new System.Drawing.Size(650, 38);
-            this.deleteAccount.TabIndex = 1;
-            this.deleteAccount.Text = "Delete Account";
-            this.deleteAccount.UseVisualStyleBackColor = false;
-            this.deleteAccount.Click += new System.EventHandler(this.deleteAccount_Click);
-            // 
-            // SubmitChangesAccount
-            // 
-            this.SubmitChangesAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(136)))), ((int)(((byte)(89)))));
-            this.SubmitChangesAccount.FlatAppearance.BorderSize = 0;
-            this.SubmitChangesAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubmitChangesAccount.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SubmitChangesAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
-            this.SubmitChangesAccount.Location = new System.Drawing.Point(84, 439);
-            this.SubmitChangesAccount.Name = "SubmitChangesAccount";
-            this.SubmitChangesAccount.Size = new System.Drawing.Size(650, 62);
-            this.SubmitChangesAccount.TabIndex = 0;
-            this.SubmitChangesAccount.Text = "Submit Account";
-            this.SubmitChangesAccount.UseVisualStyleBackColor = false;
-            this.SubmitChangesAccount.Click += new System.EventHandler(this.SubmitChangesAccount_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(196)))), ((int)(((byte)(184)))));
-            this.panel3.Controls.Add(this.newPassword);
-            this.panel3.Controls.Add(this.newLogin);
-            this.panel3.Location = new System.Drawing.Point(84, 115);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(650, 288);
-            this.panel3.TabIndex = 0;
-            // 
-            // newPassword
-            // 
-            this.newPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.newPassword.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.newPassword.Location = new System.Drawing.Point(156, 187);
-            this.newPassword.Name = "newPassword";
-            this.newPassword.Size = new System.Drawing.Size(325, 24);
-            this.newPassword.TabIndex = 1;
-            // 
-            // newLogin
-            // 
-            this.newLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.newLogin.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.newLogin.Location = new System.Drawing.Point(155, 74);
-            this.newLogin.Name = "newLogin";
-            this.newLogin.Size = new System.Drawing.Size(325, 24);
-            this.newLogin.TabIndex = 0;
-            // 
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
@@ -1470,6 +1278,346 @@
             this.appConsole.Size = new System.Drawing.Size(37, 15);
             this.appConsole.TabIndex = 1;
             this.appConsole.Text = "LOG: ";
+            // 
+            // TasksEdit
+            // 
+            this.TasksEdit.Controls.Add(this.TaskSlot6);
+            this.TasksEdit.Controls.Add(this.TaskSlot5);
+            this.TasksEdit.Controls.Add(this.TaskSlot4);
+            this.TasksEdit.Controls.Add(this.TaskSlot3);
+            this.TasksEdit.Controls.Add(this.TaskSlot2);
+            this.TasksEdit.Controls.Add(this.TaskSlot1);
+            this.TasksEdit.Location = new System.Drawing.Point(0, 0);
+            this.TasksEdit.Name = "TasksEdit";
+            this.TasksEdit.Size = new System.Drawing.Size(823, 571);
+            this.TasksEdit.TabIndex = 6;
+            // 
+            // TaskSlot1
+            // 
+            this.TaskSlot1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(82)))), ((int)(((byte)(95)))));
+            this.TaskSlot1.Controls.Add(this.TaskSlotName6);
+            this.TaskSlot1.Location = new System.Drawing.Point(0, 0);
+            this.TaskSlot1.Name = "TaskSlot1";
+            this.TaskSlot1.Size = new System.Drawing.Size(823, 60);
+            this.TaskSlot1.TabIndex = 0;
+            // 
+            // TaskSlot2
+            // 
+            this.TaskSlot2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.TaskSlot2.Controls.Add(this.TaskSlotName5);
+            this.TaskSlot2.Location = new System.Drawing.Point(0, 60);
+            this.TaskSlot2.Name = "TaskSlot2";
+            this.TaskSlot2.Size = new System.Drawing.Size(828, 60);
+            this.TaskSlot2.TabIndex = 1;
+            // 
+            // TaskSlot3
+            // 
+            this.TaskSlot3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(82)))), ((int)(((byte)(95)))));
+            this.TaskSlot3.Controls.Add(this.TaskSlotName4);
+            this.TaskSlot3.Location = new System.Drawing.Point(0, 120);
+            this.TaskSlot3.Name = "TaskSlot3";
+            this.TaskSlot3.Size = new System.Drawing.Size(822, 60);
+            this.TaskSlot3.TabIndex = 1;
+            // 
+            // TaskSlot4
+            // 
+            this.TaskSlot4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.TaskSlot4.Controls.Add(this.TaskSlotName3);
+            this.TaskSlot4.Location = new System.Drawing.Point(0, 180);
+            this.TaskSlot4.Name = "TaskSlot4";
+            this.TaskSlot4.Size = new System.Drawing.Size(828, 60);
+            this.TaskSlot4.TabIndex = 2;
+            // 
+            // TaskSlot5
+            // 
+            this.TaskSlot5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(82)))), ((int)(((byte)(95)))));
+            this.TaskSlot5.Controls.Add(this.TaskSlotName2);
+            this.TaskSlot5.Location = new System.Drawing.Point(0, 240);
+            this.TaskSlot5.Name = "TaskSlot5";
+            this.TaskSlot5.Size = new System.Drawing.Size(822, 60);
+            this.TaskSlot5.TabIndex = 2;
+            // 
+            // TaskSlot6
+            // 
+            this.TaskSlot6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.TaskSlot6.Controls.Add(this.TaskSlotName1);
+            this.TaskSlot6.Location = new System.Drawing.Point(0, 300);
+            this.TaskSlot6.Name = "TaskSlot6";
+            this.TaskSlot6.Size = new System.Drawing.Size(850, 59);
+            this.TaskSlot6.TabIndex = 3;
+            // 
+            // TaskSlotName1
+            // 
+            this.TaskSlotName1.Location = new System.Drawing.Point(361, 25);
+            this.TaskSlotName1.Name = "TaskSlotName1";
+            this.TaskSlotName1.Size = new System.Drawing.Size(197, 20);
+            this.TaskSlotName1.TabIndex = 0;
+            // 
+            // TaskSlotName2
+            // 
+            this.TaskSlotName2.Location = new System.Drawing.Point(361, 20);
+            this.TaskSlotName2.Name = "TaskSlotName2";
+            this.TaskSlotName2.Size = new System.Drawing.Size(197, 20);
+            this.TaskSlotName2.TabIndex = 1;
+            // 
+            // TaskSlotName3
+            // 
+            this.TaskSlotName3.Location = new System.Drawing.Point(364, 20);
+            this.TaskSlotName3.Name = "TaskSlotName3";
+            this.TaskSlotName3.Size = new System.Drawing.Size(194, 20);
+            this.TaskSlotName3.TabIndex = 1;
+            // 
+            // TaskSlotName4
+            // 
+            this.TaskSlotName4.Location = new System.Drawing.Point(361, 20);
+            this.TaskSlotName4.Name = "TaskSlotName4";
+            this.TaskSlotName4.Size = new System.Drawing.Size(197, 20);
+            this.TaskSlotName4.TabIndex = 1;
+            // 
+            // TaskSlotName5
+            // 
+            this.TaskSlotName5.Location = new System.Drawing.Point(364, 20);
+            this.TaskSlotName5.Name = "TaskSlotName5";
+            this.TaskSlotName5.Size = new System.Drawing.Size(194, 20);
+            this.TaskSlotName5.TabIndex = 1;
+            // 
+            // TaskSlotName6
+            // 
+            this.TaskSlotName6.Location = new System.Drawing.Point(361, 20);
+            this.TaskSlotName6.Name = "TaskSlotName6";
+            this.TaskSlotName6.Size = new System.Drawing.Size(197, 20);
+            this.TaskSlotName6.TabIndex = 1;
+            // 
+            // HideApp
+            // 
+            this.HideApp.BackColor = System.Drawing.Color.Transparent;
+            this.HideApp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Hide;
+            this.HideApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HideApp.Location = new System.Drawing.Point(962, 9);
+            this.HideApp.Name = "HideApp";
+            this.HideApp.Size = new System.Drawing.Size(15, 15);
+            this.HideApp.TabIndex = 3;
+            this.HideApp.TabStop = false;
+            this.HideApp.Click += new System.EventHandler(this.HideApp_Click);
+            // 
+            // CloseApp
+            // 
+            this.CloseApp.BackColor = System.Drawing.Color.Transparent;
+            this.CloseApp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Close;
+            this.CloseApp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CloseApp.Location = new System.Drawing.Point(983, 9);
+            this.CloseApp.Name = "CloseApp";
+            this.CloseApp.Size = new System.Drawing.Size(15, 15);
+            this.CloseApp.TabIndex = 2;
+            this.CloseApp.TabStop = false;
+            this.CloseApp.Click += new System.EventHandler(this.CloseApp_Click);
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.magnifying_glass;
+            this.SearchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SearchButton.Location = new System.Drawing.Point(784, 11);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(27, 24);
+            this.SearchButton.TabIndex = 0;
+            // 
+            // AccountRight
+            // 
+            this.AccountRight.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back1;
+            this.AccountRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AccountRight.Location = new System.Drawing.Point(756, 104);
+            this.AccountRight.Name = "AccountRight";
+            this.AccountRight.Size = new System.Drawing.Size(53, 77);
+            this.AccountRight.TabIndex = 1;
+            this.AccountRight.Click += new System.EventHandler(this.AccountRight_Click);
+            // 
+            // AccountLeft
+            // 
+            this.AccountLeft.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.back;
+            this.AccountLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AccountLeft.Location = new System.Drawing.Point(17, 104);
+            this.AccountLeft.Name = "AccountLeft";
+            this.AccountLeft.Size = new System.Drawing.Size(53, 77);
+            this.AccountLeft.TabIndex = 0;
+            this.AccountLeft.Click += new System.EventHandler(this.AccountLeft_Click);
+            // 
+            // StatusPopUp
+            // 
+            this.StatusPopUp.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Pop_Up;
+            this.StatusPopUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.StatusPopUp.Controls.Add(this.statusInPopUp);
+            this.StatusPopUp.Location = new System.Drawing.Point(646, 140);
+            this.StatusPopUp.Name = "StatusPopUp";
+            this.StatusPopUp.Size = new System.Drawing.Size(147, 43);
+            this.StatusPopUp.TabIndex = 4;
+            this.StatusPopUp.Visible = false;
+            // 
+            // statusPicture
+            // 
+            this.statusPicture.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Ellipse_2;
+            this.statusPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.statusPicture.Location = new System.Drawing.Point(775, 186);
+            this.statusPicture.Name = "statusPicture";
+            this.statusPicture.Size = new System.Drawing.Size(15, 16);
+            this.statusPicture.TabIndex = 11;
+            this.statusPicture.TabStop = false;
+            this.statusPicture.MouseLeave += new System.EventHandler(this.statusPicture_MouseLeave);
+            this.statusPicture.MouseHover += new System.EventHandler(this.statusPicture_MouseHover);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings_1;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox15.Location = new System.Drawing.Point(700, 56);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(34, 29);
+            this.pictureBox15.TabIndex = 10;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox14.Location = new System.Drawing.Point(700, 15);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(34, 29);
+            this.pictureBox14.TabIndex = 8;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
+            this.pictureBox11.Location = new System.Drawing.Point(64, 100);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(366, 1);
+            this.pictureBox11.TabIndex = 5;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Line;
+            this.pictureBox12.Location = new System.Drawing.Point(64, 207);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(366, 1);
+            this.pictureBox12.TabIndex = 6;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.SubcribeIcon;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.Location = new System.Drawing.Point(23, 23);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(47, 36);
+            this.pictureBox13.TabIndex = 0;
+            this.pictureBox13.TabStop = false;
+            // 
+            // subscribingTasksButton
+            // 
+            this.subscribingTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(139)))), ((int)(((byte)(91)))));
+            this.subscribingTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Subscribing;
+            this.subscribingTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.subscribingTasksButton.FlatAppearance.BorderSize = 0;
+            this.subscribingTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subscribingTasksButton.Location = new System.Drawing.Point(548, 0);
+            this.subscribingTasksButton.Name = "subscribingTasksButton";
+            this.subscribingTasksButton.Size = new System.Drawing.Size(274, 76);
+            this.subscribingTasksButton.TabIndex = 2;
+            this.subscribingTasksButton.UseVisualStyleBackColor = false;
+            this.subscribingTasksButton.Click += new System.EventHandler(this.subscribingTasksButton_Click);
+            // 
+            // TechnicalTasksButton
+            // 
+            this.TechnicalTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(125)))), ((int)(((byte)(84)))));
+            this.TechnicalTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Technical;
+            this.TechnicalTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.TechnicalTasksButton.FlatAppearance.BorderSize = 0;
+            this.TechnicalTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TechnicalTasksButton.Location = new System.Drawing.Point(274, 0);
+            this.TechnicalTasksButton.Name = "TechnicalTasksButton";
+            this.TechnicalTasksButton.Size = new System.Drawing.Size(274, 76);
+            this.TechnicalTasksButton.TabIndex = 1;
+            this.TechnicalTasksButton.UseVisualStyleBackColor = false;
+            this.TechnicalTasksButton.Click += new System.EventHandler(this.TechnicalTasksButton_Click);
+            // 
+            // LikingTasksButton
+            // 
+            this.LikingTasksButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(91)))), ((int)(((byte)(59)))));
+            this.LikingTasksButton.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.Liking;
+            this.LikingTasksButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LikingTasksButton.FlatAppearance.BorderSize = 0;
+            this.LikingTasksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LikingTasksButton.Location = new System.Drawing.Point(0, 0);
+            this.LikingTasksButton.Name = "LikingTasksButton";
+            this.LikingTasksButton.Size = new System.Drawing.Size(274, 76);
+            this.LikingTasksButton.TabIndex = 0;
+            this.LikingTasksButton.UseVisualStyleBackColor = false;
+            this.LikingTasksButton.Click += new System.EventHandler(this.LikingTasksButton_Click);
+            // 
+            // PictureBox7
+            // 
+            this.PictureBox7.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logo;
+            this.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox7.Location = new System.Drawing.Point(44, 35);
+            this.PictureBox7.Name = "PictureBox7";
+            this.PictureBox7.Size = new System.Drawing.Size(85, 50);
+            this.PictureBox7.TabIndex = 0;
+            this.PictureBox7.TabStop = false;
+            // 
+            // PictureBox10
+            // 
+            this.PictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox10.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logout;
+            this.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox10.Location = new System.Drawing.Point(31, 544);
+            this.PictureBox10.Name = "PictureBox10";
+            this.PictureBox10.Size = new System.Drawing.Size(29, 21);
+            this.PictureBox10.TabIndex = 9;
+            this.PictureBox10.TabStop = false;
+            // 
+            // PictureBox9
+            // 
+            this.PictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox9.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings;
+            this.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox9.Location = new System.Drawing.Point(31, 260);
+            this.PictureBox9.Name = "PictureBox9";
+            this.PictureBox9.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox9.TabIndex = 7;
+            this.PictureBox9.TabStop = false;
+            // 
+            // PictureBox8
+            // 
+            this.PictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox8.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.monitor;
+            this.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox8.Location = new System.Drawing.Point(31, 193);
+            this.PictureBox8.Name = "PictureBox8";
+            this.PictureBox8.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox8.TabIndex = 5;
+            this.PictureBox8.TabStop = false;
+            // 
+            // PictureBox2
+            // 
+            this.PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.settings_1;
+            this.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox2.Location = new System.Drawing.Point(31, 126);
+            this.PictureBox2.Name = "PictureBox2";
+            this.PictureBox2.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox2.TabIndex = 3;
+            this.PictureBox2.TabStop = false;
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.avatar;
+            this.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox1.Location = new System.Drawing.Point(31, 59);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(29, 33);
+            this.PictureBox1.TabIndex = 1;
+            this.PictureBox1.TabStop = false;
             // 
             // LoginWindow
             // 
@@ -1592,6 +1740,17 @@
             this.Logo.Size = new System.Drawing.Size(121, 114);
             this.Logo.TabIndex = 0;
             // 
+            // statusInPopUp
+            // 
+            this.statusInPopUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.statusInPopUp.Font = new System.Drawing.Font("Montserrat SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statusInPopUp.Location = new System.Drawing.Point(14, 5);
+            this.statusInPopUp.Name = "statusInPopUp";
+            this.statusInPopUp.Size = new System.Drawing.Size(119, 23);
+            this.statusInPopUp.TabIndex = 0;
+            this.statusInPopUp.Text = "not active";
+            this.statusInPopUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1608,22 +1767,24 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Main_Load);
             this.TopPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.HideApp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).EndInit();
             this.LeftMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.SoftMenuLogoPanel.ResumeLayout(false);
             this.SoftMenuLogoPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
             this.SoftWindow.ResumeLayout(false);
+            this.Accounts.ResumeLayout(false);
+            this.searchAccount.ResumeLayout(false);
+            this.accountsList.ResumeLayout(false);
+            this.accountInfo.ResumeLayout(false);
+            this.accountInfo.PerformLayout();
+            this.accountLoginPass.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.EditAccountPanel.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.Tasks.ResumeLayout(false);
             this.CompetitorsSubscribing.ResumeLayout(false);
             this.CompetitorsSubscribing.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel2.ResumeLayout(false);
             this.LikingTasks.ResumeLayout(false);
             this.TechnicalTasks.ResumeLayout(false);
@@ -1632,26 +1793,39 @@
             this.TaskPreview.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.Accounts.ResumeLayout(false);
-            this.searchAccount.ResumeLayout(false);
-            this.accountsList.ResumeLayout(false);
-            this.accountInfo.ResumeLayout(false);
-            this.accountInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.accountLoginPass.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.EditAccountPanel.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
             this.Stats.ResumeLayout(false);
             this.Stats.PerformLayout();
+            this.TasksEdit.ResumeLayout(false);
+            this.TaskSlot1.ResumeLayout(false);
+            this.TaskSlot1.PerformLayout();
+            this.TaskSlot2.ResumeLayout(false);
+            this.TaskSlot2.PerformLayout();
+            this.TaskSlot3.ResumeLayout(false);
+            this.TaskSlot3.PerformLayout();
+            this.TaskSlot4.ResumeLayout(false);
+            this.TaskSlot4.PerformLayout();
+            this.TaskSlot5.ResumeLayout(false);
+            this.TaskSlot5.PerformLayout();
+            this.TaskSlot6.ResumeLayout(false);
+            this.TaskSlot6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HideApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).EndInit();
+            this.StatusPopUp.ResumeLayout(false);
+            this.StatusPopUp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.LoginWindow.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
@@ -1768,7 +1942,7 @@
         internal System.Windows.Forms.Button NonFollowersUnsubscribingButton;
         internal System.Windows.Forms.Button UnfollowFollowingButton;
         internal System.Windows.Forms.PictureBox pictureBox15;
-        internal System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.Button accountsTasksEditButton;
         internal System.Windows.Forms.PictureBox pictureBox14;
         internal System.Windows.Forms.Button editAccount;
         internal System.Windows.Forms.Panel EditAccountPanel;
@@ -1779,6 +1953,21 @@
         internal System.Windows.Forms.Button deleteAccount;
         internal System.Windows.Forms.PictureBox statusPicture;
         private System.Windows.Forms.ComboBox CompetitorsSubscribingAccountsComboBox;
+        private System.Windows.Forms.Panel TasksEdit;
+        private System.Windows.Forms.Panel TaskSlot6;
+        private System.Windows.Forms.TextBox TaskSlotName1;
+        private System.Windows.Forms.Panel TaskSlot5;
+        private System.Windows.Forms.TextBox TaskSlotName2;
+        private System.Windows.Forms.Panel TaskSlot4;
+        private System.Windows.Forms.TextBox TaskSlotName3;
+        private System.Windows.Forms.Panel TaskSlot3;
+        private System.Windows.Forms.TextBox TaskSlotName4;
+        private System.Windows.Forms.Panel TaskSlot2;
+        private System.Windows.Forms.TextBox TaskSlotName5;
+        private System.Windows.Forms.Panel TaskSlot1;
+        private System.Windows.Forms.TextBox TaskSlotName6;
+        private System.Windows.Forms.Panel StatusPopUp;
+        private System.Windows.Forms.TextBox statusInPopUp;
     }
 }
 

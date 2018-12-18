@@ -7,9 +7,9 @@ namespace WindowsFormsApp1
     public static class Extensions
     {
         public static void Open(this Panel panel)
-        {
+        {            
             panel.BringToFront();
-            panel.Visible = true;
+            panel.Visible = true;  
         }
         public static void Close(this Panel panel)
         {

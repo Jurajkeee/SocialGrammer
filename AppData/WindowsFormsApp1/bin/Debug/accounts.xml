@@ -2,32 +2,10 @@
 <AccountsBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Accounts>
     <Account>
-      <login>fdfdasfdas</login>
-      <password>fsadfsdafads</password>
+      <login>Yurii_Fedorkevich</login>
+      <password>hello_mf</password>
       <status>not-active</status>
-      <Tasks>
-        <Task xsi:type="CuncurentsSubscribing">
-          <account_login>fdfdasfdas</account_login>
-          <Aim_x0020_Accounts>
-            <Account>System.Windows.Forms.TextBox,</Account>
-            <Account>Text:</Account>
-            <Account>fadfdsafdsa</Account>
-            <Account>fdsfadsf</Account>
-            <Account>dsafasdfa</Account>
-          </Aim_x0020_Accounts>
-          <Subscribe_x0020_On_x0020_private_x0020_Accounts>false</Subscribe_x0020_On_x0020_private_x0020_Accounts>
-          <Dont_x0020_subscribe_x0020_on_x0020_accounts_x0020_without_x0020_bio>true</Dont_x0020_subscribe_x0020_on_x0020_accounts_x0020_without_x0020_bio>
-          <Use_x0020_FIlters>true</Use_x0020_FIlters>
-          <HaveAnAvatar>true</HaveAnAvatar>
-          <Have_x0020_More_x0020_Than_x0020_Ten_x0020_Publications>true</Have_x0020_More_x0020_Than_x0020_Ten_x0020_Publications>
-          <Min_x0020_Followers>40</Min_x0020_Followers>
-          <Max_x0020_Followers>200</Max_x0020_Followers>
-          <Min_x0020_Followed>10</Min_x0020_Followed>
-          <Max_x0020_Followed>500</Max_x0020_Followed>
-          <Delay_x0020_Between_x0020_Actions>20</Delay_x0020_Between_x0020_Actions>
-          <Smart_x0020_Mode>true</Smart_x0020_Mode>
-        </Task>
-      </Tasks>
+      <Tasks />
     </Account>
   </Accounts>
 </AccountsBase>
