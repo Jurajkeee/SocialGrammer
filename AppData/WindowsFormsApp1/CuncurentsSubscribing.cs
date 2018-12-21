@@ -9,34 +9,36 @@ namespace WindowsFormsApp1
         [XmlArray("Aim Accounts")]
         [XmlArrayItem("Account", typeof(string))]
         public string[] aim_accounts;
-        [System.Xml.Serialization.XmlElement("Subscribe On private Accounts")]
+        [XmlElement("Subscribe On private Accounts")]
         public bool subscribe_on_private_accounts;
-        [System.Xml.Serialization.XmlElement("Dont subscribe on accounts without bio")]
+        [XmlElement("Dont subscribe on accounts without bio")]
         public bool dont_subscribe_on_accounts_without_bio;
-        [System.Xml.Serialization.XmlElement("Use FIlters")]
+        [XmlElement("Use FIlters")]
         public bool filters;
-        [System.Xml.Serialization.XmlElement("HaveAnAvatar")]
+        [XmlElement("HaveAnAvatar")]
         public bool have_an_avatar;
-        [System.Xml.Serialization.XmlElement("Have More Than Ten Publications")]
+        [XmlElement("Have More Than Ten Publications")]
         public bool have_more_ten_publications;
-        [System.Xml.Serialization.XmlElement("Min Followers")]
+        [XmlElement("Min Followers")]
         public int min_followers;
-        [System.Xml.Serialization.XmlElement("Max Followers")]
+        [XmlElement("Max Followers")]
         public int max_followers;
-        [System.Xml.Serialization.XmlElement("Min Followed")]
+        [XmlElement("Min Followed")]
         public int min_followed;
-        [System.Xml.Serialization.XmlElement("Max Followed")]
+        [XmlElement("Max Followed")]
         public int max_followed;
-        [System.Xml.Serialization.XmlElement("Delay Between Actions")]
+        [XmlElement("Delay Between Actions")]
         public int delay_between_actions;
-        [System.Xml.Serialization.XmlElement("Smart Mode")]
+        [XmlElement("Smart Mode")]
         public bool smart_mode;
 
-        public CuncurentsSubscribing(string account_login,string[] aim_accounts, bool subscribe_on_private_accounts,
+        public CuncurentsSubscribing(string[] aim_accounts, bool subscribe_on_private_accounts,
         bool dont_subscribe_on_accounts_without_bio, bool filters, bool have_an_avatar, bool have_more_ten_publications,
         int min_followers, int max_followers, int min_followed, int max_followed, int delay_between_actions, bool smart_mode)
         {
-            this.account_login = account_login;
+            base.taskName = "Concurrents Subscribing";
+            base.taskDescription = "Test";
+
             this.aim_accounts = aim_accounts;
             this.subscribe_on_private_accounts = subscribe_on_private_accounts;
             this.dont_subscribe_on_accounts_without_bio = dont_subscribe_on_accounts_without_bio;
@@ -51,7 +53,11 @@ namespace WindowsFormsApp1
             this.smart_mode = smart_mode;
 
         }
-        private CuncurentsSubscribing() { }
+        private CuncurentsSubscribing() {
+            base.taskName = "Concurrents Subscribing";
+            base.taskDescription = "Test";
+        }
 
+        
     }
 }

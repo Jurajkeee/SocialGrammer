@@ -29,6 +29,8 @@ namespace WindowsFormsApp1
 
         public string choosedTaskForCreation;
         public Panel currentActiveWindow;
+
+        public Button[] accountTasksSlots = new Button[10];
         #endregion
         #region Essential
         public Main()
@@ -52,11 +54,30 @@ namespace WindowsFormsApp1
             UpdateTasksButtons(LikingTasksButton);
 
             currentActiveWindow = Accounts;
+
+            accountTasksSlots[0] = TaskSlotButton1_1;
+            accountTasksSlots[1] = TaskSlot2Button1_1;
+            accountTasksSlots[2] = TaskSlot3Button1_1;
+            accountTasksSlots[3] = TaskSlot4Button1_1;
+            accountTasksSlots[4] = TaskSlot5Button1_1;
         }
         #endregion
 
         #region BackEnd Methods
-        public Account FindAccount(string account)
+
+        public void UpdateTasksEditionWindow()
+        {
+            var account = info.accounts_data.accounts[account_id];
+            AccountName1_1.Text = account.login;
+            for (int i = 0; i < account.tasks.Count; i++)
+            {
+                accountTasksSlots[i].Text = account.tasks[i].taskName;
+            }
+            TaskName1_1.Text = accountTasksSlots[0].Text;
+            Logger.LogMessage(account.tasks[0].taskName);
+
+        }
+        public Account FindAccount(string account) //Going To Find Account By Name String Tasks Setup needs it
         {
             return info.accounts_data.accounts.Find(x => x.login.Contains(account));
         }
@@ -303,6 +324,10 @@ namespace WindowsFormsApp1
         #endregion
 
         #region Accounts Panel
+        private void DeleteButton1_1_Click(object sender, EventArgs e)
+        {
+
+        }
         private void SubmitChangesAccount_Click(object sender, EventArgs e)
         {
             info.accounts_data.accounts[account_id].login = newLogin.Text;
@@ -311,7 +336,9 @@ namespace WindowsFormsApp1
         }
         private void accountsTasksEditButton_Click(object sender, EventArgs e)
         {
+            UpdateTasksEditionWindow();
             TasksEdit.Open();
+            
         }
         private void statusPicture_MouseHover(object sender, EventArgs e)
         {
@@ -335,6 +362,7 @@ namespace WindowsFormsApp1
             info.Save();
             UpdateAccountInfo(account_id);
             Accounts.Open();
+            accountLoginPass.Visible = false;
         }
 
         private void AddAccountButton_Click(object sender, EventArgs e)
@@ -512,6 +540,8 @@ namespace WindowsFormsApp1
             TaskNameInDescriptionPanel.Text = "Following Unsubsribing";
             TaskDescription.Text = "Task unsubscribes from all users " + Environment.NewLine + "that you're following";
         }
+
+
         #endregion
 
         #region TaskWindow
@@ -523,7 +553,8 @@ namespace WindowsFormsApp1
         private void CompetitorsSubscribingButtonSubmit_Click(object sender, EventArgs e)
         {
             var account = CompetitorsSubscribingAccountsComboBox.SelectedItem.ToString();            
-            CuncurentsSubscribing task = new CuncurentsSubscribing(account, TurnStringIntoArray(aimAccountsCompetitprsSubscription.ToString()),false,true,true,true,true,40,200,10,500,20,true);
+            CuncurentsSubscribing task = new CuncurentsSubscribing(TurnStringIntoArray(aimAccountsCompetitprsSubscription.ToString()),false,true,true,true,true,40,200,10,500,20,true);
+            FindAccount(account).AddTask(task);
             CompetitorsSubscribing.Close();            
             info.Save();
         }

@@ -8,8 +8,10 @@ namespace WindowsFormsApp1
     [Serializable()]
     public abstract class Task
     {
-        [System.Xml.Serialization.XmlElement("account_login")]
-        public string account_login;
+        [System.Xml.Serialization.XmlElement("task_login")]
+        public string taskName;
+        [System.Xml.Serialization.XmlElement("task_description")]
+        public string taskDescription;
     }
 
 }

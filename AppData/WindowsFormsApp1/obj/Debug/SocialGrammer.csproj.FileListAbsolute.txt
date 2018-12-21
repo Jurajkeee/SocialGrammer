@@ -27,3 +27,4 @@ C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\Social
 C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\SocialGrammer.csproj.CoreCompileInputs.cache
 C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\po4ta\Desktop\SocialGrammerC#\AppData\WindowsFormsApp1\obj\Debug\SocialGrammer.csprojAssemblyReference.cache
